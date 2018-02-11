@@ -43,10 +43,10 @@
   	</div>
 
 		<div class="dashboard display-animation" style="margin: 0 auto; width: 1130px;">
-		  <a class="tile tile-lg tile-white ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
-		        <span class="tile-img" style="background-image: url('imgs/tiles/otkosi.jpg');"></span>
+		        <span class="tile-img" style="background-image: url('imgs/tiles-squared/otkosi.jpg');"></span>
 		        <span class="tile-holder tile-holder-sm">
 		          <span class="title">Откосы</span>
 		        </span>
@@ -83,10 +83,10 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-white ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
-		        <span class="tile-img" style="background-image: url(imgs/tiles/uplotniteli.jpg);"></span>
+		        <span class="tile-img" style="background-image: url(imgs/tiles-squared/uplotniteli.jpg);"></span>
 		        <span class="tile-holder tile-holder-sm">
 		          <span class="title">Уплотнители</span>
 		        </span>
@@ -123,10 +123,10 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-white ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
-		        <span class="tile-img" style="background-image: url(imgs/tiles/pilomaterialy.jpg);"></span>
+		        <span class="tile-img" style="background-image: url(imgs/tiles-squared/pilomaterialy.jpg);"></span>
 		        <span class="tile-holder tile-holder-sm">
 		          <span class="title">Пиломатериалы</span>
 		        </span>

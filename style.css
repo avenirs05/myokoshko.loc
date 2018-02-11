@@ -1,3 +1,177 @@
+/*.sticky-top {
+    position: fixed !important;
+    width: 100%;
+}*/
+
+@font-face {
+	font-family: 'Open Sans Condensed', sans-serif;
+	src: url("/fonts/OpenSansCondensed-Light.ttf");
+}
+
+@font-face {
+	font-family: 'Open Sans Condensed', sans-serif;
+	src: url("/fonts/OpenSansCondensed-Bold.ttf");
+}
+
+ul, li, span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;	
+}
+
+.red {
+	color: red;
+}
+
+.header .phone-digits {
+	font-size: 22px;
+	margin-right: 10px;
+	margin-left: 5px;
+	padding-bottom: 1px;
+}
+
+.header .whatsapp-icon,
+.header .viber-icon {
+	margin-right: 3px;
+}
+
+.header .phone-icon {
+	margin-top: -1px;
+}
+
+.header a {
+	color: #000;
+}
+
+.header .contacts {
+	padding-right: 0;
+}
+
+.header ul {
+	font-size: 18px;
+	margin-left: 30px;
+	font-weight: 500;
+}
+
+.header .list-inline-item {
+	margin-right: 30px;
+}
+
+.header .list-inline-item:last-child {
+	margin-right: 0px;
+}
+
+.header #title-wrap {
+	margin-left: 15px;
+}
+
+.header #company-name {
+	font-size: 36px;	
+	font-family: 'Open Sans', sans-serif;
+	color: #289dcc;
+}
+
+.header #what-sell {
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	color: #289dcc;
+}
+
+
+
+
+@media screen and (max-device-width: 991px) {
+
+
+}
+
+@media screen and (min-device-width: 320px) {
+
+}
+
+@media screen and (min-device-width: 360px) {
+
+
+}
+
+@media screen and (min-device-width: 480px) {
+
+}
+
+@media screen and (min-device-width: 768px) {
+
+}
+
+@media screen and (min-device-width: 992px) {	
+
+}
+
+@media screen and (min-device-width: 1200px) {	
+
+}
+
+@media screen and (min-device-width: 1366px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
 @media screen and (max-device-width: 351px) { 
 
 }

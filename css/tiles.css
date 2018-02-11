@@ -35,9 +35,9 @@ body {
 /* -- Google typography ------------------------------- */
 .title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
-  color: #212121;
+  color: #289dcc;
   text-transform: inherit;
   letter-spacing: inherit;
 }
@@ -1310,6 +1310,7 @@ body {
 
 .tile-white {
   background-color: #fff;
+  border: 1px solid #CCCCCC;
 }
 
 .tile-white .tile-content,

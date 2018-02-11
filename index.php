@@ -43,7 +43,7 @@
   	</div>
 
 		<div class="dashboard display-animation" style="margin: 0 auto; width: 1130px;">
-		  <a class="tile tile-lg tile-pink ripple-effect" href="#">
+		  <a class="tile tile-lg tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url('imgs/tiles/otkosi.jpg');"></span>
@@ -53,7 +53,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-sqr tile-purple ripple-effect" href="moskit.php" target="_blank">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="moskit.php" target="_blank">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/moskitka.jpg);"></span>
@@ -63,7 +63,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-sqr tile-teal ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/podokonniki.jpg);"></span>
@@ -73,7 +73,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-sqr tile-teal ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/materials.jpg);"></span>
@@ -83,7 +83,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-blue ripple-effect" href="#">
+		  <a class="tile tile-lg tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/uplotniteli.jpg);"></span>
@@ -93,7 +93,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-sqr tile-red ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/furnitura.jpg);"></span>
@@ -103,7 +103,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-sqr tile-indigo ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/otlivi.jpg);"></span>
@@ -113,7 +113,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-sqr tile-deep-orange ripple-effect" href="#">
+		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/paneli-pvh.jpg);"></span>
@@ -123,7 +123,7 @@
 		      </span>      
 		    </span>
 		  </a>
-		  <a class="tile tile-lg tile-green ripple-effect" href="#">
+		  <a class="tile tile-lg tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/pilomaterialy.jpg);"></span>

@@ -1308,6 +1308,116 @@ body {
 @media screen and (min-device-width: 1366px) {}
 
 
+.tile-white {
+  background-color: #fff;
+}
+
+.tile-white .tile-content,
+.tile-white .title {  }
+.tile-white:hover,
+.tile-white:active,
+.tile-white.active {
+  background-color: #fff;
+  color: #fff;
+}
+.tile-white:focus {
+  background-color: #7b1fa2;
+}
+.tile-white:disabled,
+.tile-white.disabled,
+.tile-white[disabled] {
+  background-color: #b3b3b3;
+}
+.tile-white .ink {
+  background-color: #6a1b9a;
+}
+.tile-white-reverse {
+  background-color: #ab47bc;
+}
+.tile-white-reverse:hover {
+  background-color: #eceff1;
+}
+.tile-white-reverse:hover .tile-content,
+.tile-white-reverse:hover .title {
+  color: #ab47bc;
+}
+.tile-white-inverse {
+  background-color: #eceff1;
+}
+.tile-white-inverse .tile-content,
+.tile-white-inverse .title {
+  color: #ab47bc;
+}
+.tile-white-inverse-reverse .tile-content,
+.tile-white-inverse-reverse .title {
+  color: #ab47bc;
+}
+.tile-white-inverse-reverse:hover {
+  background-color: #ab47bc;
+}
+.tile-white-inverse-reverse:hover .tile-content,
+.tile-white-inverse-reverse:hover .title {
+  color: #eceff1;
+}
+.tile-white-inverse-reverse .ink {
+  background-color: #6a1b9a;
+}
+.tile-deep-white {
+  background-color: #7e57c2;
+}
+.tile-deep-white .tile-content,
+.tile-deep-white .title {
+  color: #eceff1;
+}
+.tile-deep-white:hover,
+.tile-deep-white:active,
+.tile-deep-white.active {
+  background-color: #5e35b1;
+}
+.tile-deep-white:focus {
+  background-color: #512da8;
+}
+.tile-deep-white:disabled,
+.tile-deep-white.disabled,
+.tile-deep-white[disabled] {
+  background-color: #b3b3b3;
+}
+.tile-deep-white .ink {
+  background-color: #4527a0;
+}
+.tile-deep-white-reverse {
+  background-color: #7e57c2;
+}
+.tile-deep-white-reverse:hover {
+  background-color: #eceff1;
+}
+.tile-deep-white-reverse:hover .tile-content,
+.tile-deep-white-reverse:hover .title {
+  color: #7e57c2;
+}
+.tile-deep-white-inverse {
+  background-color: #eceff1;
+}
+.tile-deep-white-inverse .tile-content,
+.tile-deep-white-inverse .title {
+  color: #7e57c2;
+}
+.tile-deep-white-inverse-reverse .tile-content,
+.tile-deep-white-inverse-reverse .title {
+  color: #7e57c2;
+}
+.tile-deep-white-inverse-reverse:hover {
+  background-color: #7e57c2;
+}
+.tile-deep-white-inverse-reverse:hover .tile-content,
+.tile-deep-white-inverse-reverse:hover .title {
+  color: #eceff1;
+}
+.tile-deep-white-inverse-reverse .ink {
+  background-color: #4527a0;
+}
+
+
 
 
 

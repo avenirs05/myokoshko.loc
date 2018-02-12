@@ -42,6 +42,16 @@
 			</nav>			
   	</div>
 
+  	<div id="menu-wrap" class="container-fluid header d-none d-lg-block sticky-top">			
+			<nav class="row navbar navbar-light">
+				<div id="header-content" class="ml-auto mr-auto">
+			    <div class="col-auto d-flex align-items-center">
+						<div id="menu-content">Меню</div>
+			    </div>
+			  </div>
+			</nav>			
+  	</div>
+
 		<div id="tiles-wrap" class="dashboard display-animation">
 		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">

@@ -154,9 +154,19 @@ a {
 	}
 	.tile-lg.tile-sqr {
 	  width: 220px;
-/*	  margin-left: 0;
-	  margin-right: 0;*/
 	}
+	#menu-wrap {
+		padding-top: 0;
+	}
+	#menu-wrap .navbar {
+		padding-top: 0;		
+		color: #fff;
+	}
+	#menu-wrap #menu-content {
+		background-color: #005BA6;
+		width: 100%;
+	}
+
 	
 }
 

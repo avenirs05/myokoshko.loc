@@ -47,7 +47,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url('imgs/tiles-squared/otkosi.jpg');"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Откосы</span>
 		        </span>
 		      </span>      
@@ -57,7 +57,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/moskitka.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Москитные сетки</span>
 		        </span>
 		      </span>      
@@ -67,7 +67,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/podokonniki.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Подоконники <br> Ремонтные накладки</span>
 		        </span>
 		      </span>      
@@ -77,7 +77,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/materials.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Материалы для монтажа</span>
 		        </span>
 		      </span>      
@@ -87,7 +87,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles-squared/uplotniteli.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Уплотнители</span>
 		        </span>
 		      </span>      
@@ -97,7 +97,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/furnitura.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Фурнитура <br> Ручки / Накладки</span>
 		        </span>
 		      </span>      
@@ -107,7 +107,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/otlivi.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Отливы / Козырьки</span>
 		        </span>
 		      </span>      
@@ -117,7 +117,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles/paneli-pvh.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Панели ПВХ <br>Сайдинг / Ламинат</span>
 		        </span>
 		      </span>      
@@ -127,7 +127,7 @@
 		    <span class="content-wrapper">
 		      <span class="tile-content">
 		        <span class="tile-img" style="background-image: url(imgs/tiles-squared/pilomaterialy.jpg);"></span>
-		        <span class="tile-holder tile-holder-sm">
+		        <span class="tile-holder">
 		          <span class="title">Пиломатериалы</span>
 		        </span>
 		      </span>      

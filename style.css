@@ -82,12 +82,25 @@ a {
 
 
 @media screen and (max-device-width: 991px) {
-	
+	.tile-lg.tile-sqr {
+	    width: 99%;
+	    margin: 0 auto;
+	    margin-left: auto;
+	    margin-bottom: 30px;
+	}
+	.content-wrapper {
+		background-color: #fff;
+	}
+	.tile-holder {
+		text-align: center;	
+	}
 
 }
 
 @media screen and (min-device-width: 320px) {
-
+	.tile-holder {
+		margin-top: 10px;
+	}
 }
 
 @media screen and (min-device-width: 360px) {
@@ -115,6 +128,10 @@ a {
 	.tile-lg.tile-sqr {
 	  width: 220px;
 	}
+	.tile-holder.title {
+		font-size: 16px;
+	}
+
 	
 }
 

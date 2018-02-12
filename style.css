@@ -22,20 +22,27 @@ a {
 	text-decoration: none;	
 }
 
+.tile-lg.tile-sqr:visited {
+	color: #fff;
+}
+
 .red {
 	color: red;
 }
 
 .header .phone-digits {
 	font-size: 22px;
-	margin-right: 10px;
 	margin-left: 5px;
 	padding-bottom: 1px;
+	font-weight: 400;
 }
 
+.header .instagram-icon,
+.header .odnokl-icon,
 .header .whatsapp-icon,
-.header .viber-icon {
-	margin-right: 3px;
+.header .viber-icon,
+.header .lelegram-icon {
+	margin-left: 2px;
 }
 
 .header .phone-icon {
@@ -46,8 +53,41 @@ a {
 	color: #000;
 }
 
-.header .contacts {
+.header .icon-link,
+.header .icon-cart {
+	text-decoration: none;
+}
+
+.header .icon-link:hover {
+	text-decoration: none;
+}
+
+.header .contacts-mob-phone {
 	padding-right: 0;
+	position: absolute;
+	top: 35px;
+	right: 15px;
+}
+
+.header .contacts-city-phone {
+	padding-right: 0;
+	position: absolute;
+	top: 65px;
+	right: 15px;
+}
+
+.icon-cart {
+	position: absolute;
+	top: -5px;
+	right: 15px;
+}
+
+.icon-cart span {
+	font-size: 22px;
+	font-weight: 700;
+	color: #E7501E;
+	position: relative;
+	top: 7px;
 }
 
 .header ul {
@@ -69,7 +109,7 @@ a {
 }
 
 .header #company-name {
-	font-size: 36px;	
+	font-size: 42px;	
 	font-family: 'Open Sans', sans-serif;
 	color: #289dcc;
 }
@@ -78,6 +118,21 @@ a {
 	font-size: 24px;
 	font-family: 'Open Sans', sans-serif;
 	color: #289dcc;
+	font-weight: 600;
+}
+
+.header #logo {
+	margin-bottom: 13px;
+} 
+
+.header #header-content > div {
+	position: relative;
+}
+
+.connects-icon-wrap {
+	position: absolute;
+	top: 3px;
+	left: 50%;
 }
 
 
@@ -146,7 +201,7 @@ a {
 @media screen and (min-device-width: 992px) {	
 	#header-content {
 		padding-left: 0 auto; 
-		width: 930px;
+		width: 940px;
 	}
 	#tiles-wrap {
 		margin: 0 auto; 
@@ -166,8 +221,6 @@ a {
 		background-color: #005BA6;
 		width: 100%;
 	}
-
-	
 }
 
 @media screen and (min-device-width: 1200px) {	
@@ -180,6 +233,9 @@ a {
 	.tile-lg.tile-sqr {
 	  width: 270px;
 	}
+/*	.dashboard > * {
+		float: left;
+	}*/
 }
 
 @media screen and (min-device-width: 1366px) {

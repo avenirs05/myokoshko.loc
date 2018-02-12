@@ -16,7 +16,7 @@
 
   	<div class="container-fluid header d-none d-lg-block">			
 			<nav class="row navbar navbar-light">
-				<div class="ml-auto mr-auto" style="padding-left: 0 auto; width: 1140px;">
+				<div id="header-content" class="ml-auto mr-auto">
 			    <div class="col-auto d-flex align-items-center">
 			      <a href="/">
 			      	<img src="/imgs/logo.png" height="90" alt="">
@@ -42,7 +42,7 @@
 			</nav>			
   	</div>
 
-		<div class="dashboard display-animation" style="margin: 0 auto; width: 1130px;">
+		<div id="tiles-wrap" class="dashboard display-animation">
 		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">
 		      <span class="tile-content">

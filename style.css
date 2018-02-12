@@ -81,10 +81,8 @@ a {
 }
 
 
-
-
 @media screen and (max-device-width: 991px) {
-
+	
 
 }
 
@@ -106,11 +104,30 @@ a {
 }
 
 @media screen and (min-device-width: 992px) {	
-
+	#header-content {
+		padding-left: 0 auto; 
+		width: 930px;
+	}
+	#tiles-wrap {
+		margin: 0 auto; 
+		width: 930px;
+	}
+	.tile-lg.tile-sqr {
+	  width: 220px;
+	}
+	
 }
 
 @media screen and (min-device-width: 1200px) {	
-
+	#header-content {
+		width: 1140px;
+	}
+	#tiles-wrap {
+		width: 1130px;
+	}
+	.tile-lg.tile-sqr {
+	  width: 270px;
+	}
 }
 
 @media screen and (min-device-width: 1366px) {

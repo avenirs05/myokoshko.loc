@@ -13,7 +13,7 @@
   </head>
 
   <body> 
-
+	
   	<div class="container-fluid header d-none d-lg-block">			
 			<nav class="row navbar navbar-light">
 				<div id="header-content" class="ml-auto mr-auto">
@@ -42,11 +42,6 @@
 			      	<img class="viber-icon" src="imgs/connect/viber.png" width="25" height="25" alt="">
 			      	<img class="telegram-icon" src="imgs/connect/telegram.png" width="25" height="25" alt="">    
 			      </div>
-<!-- 			      <ul class="col d-flex align-items-center list-unstyled list-inline">
-			        <li class="list-inline-item"><a href="/#why-uber-section" id="why-uber-link">Главная</a></li>
-			        <li class="list-inline-item"><a href="/#req-drivers-section" id="req-drivers-link">Доставка</a></li>
-			        <li class="list-inline-item"><a href="/#req-auto-section" id="req-auto-link">Прайс-лист</a></li>
-			      </ul> -->
 			      <a class="icon-cart" href="#" target="_blank">
 			      	<span>0</span>
 			      	<img class="img-fluid" src="imgs/connect/cart.svg" width="25" height="25" alt=""> 
@@ -68,7 +63,44 @@
 			<nav class="row navbar navbar-light">
 				<div id="header-content" class="ml-auto mr-auto">
 			    <div class="col-auto d-flex align-items-center">
-						<div id="menu-content">Меню</div>
+
+						<div id="menu-content">
+							
+							<ul class="nav">
+							  <li class="nav-item">
+							    <a class="nav-link active" href="/">Главная</a>
+							  </li>							  
+					
+						    <div class="btn-group">
+						      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог	        
+						      </button>
+						      <div class="dropdown-menu">
+						        <a class="dropdown-item" href="#">Откосы</a>
+						        <div class="dropdown-divider"></div>
+						        
+						        <a class="dropdown-item" href="#">Москитные сетки</a>
+						        <div class="dropdown-divider"></div>
+						        
+						        <a class="dropdown-item" href="#">Подоконники / Ремонтные накладки</a>
+						        <div class="dropdown-divider"></div>
+						        
+						        <a class="dropdown-item" href="#">Материалы для монтажа</a>
+						      </div>
+						    </div>	
+							  
+							  <li class="nav-item">
+							    <a class="nav-link" href="price.php" target="_blank">Доставка</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" href="price.php" target="_blank">Оплата</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" href="price.php" target="_blank">Контакты</a>
+							  </li>
+							</ul>
+
+						</div>
+
 			    </div>
 			  </div>
 			</nav>			

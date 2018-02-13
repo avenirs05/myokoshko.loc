@@ -43,7 +43,7 @@
 			      	<img class="telegram-icon" src="imgs/connect/telegram.png" width="25" height="25" alt="">    
 			      </div>
 			      <a class="icon-cart" href="#" target="_blank">
-			      	<span>0</span>
+			      	<span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantaty-goods">3</span>
 			      	<img class="img-fluid" src="imgs/connect/cart.svg" width="25" height="25" alt=""> 
 			      </a> 
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">          

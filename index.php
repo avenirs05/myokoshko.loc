@@ -13,7 +13,8 @@
   </head>
 
   <body> 
-	
+		
+		<!-- Хедер десктоп -->
   	<div class="container-fluid header d-none d-lg-block">			
 			<nav class="row navbar navbar-light">
 				<div id="header-content" class="ml-auto mr-auto">
@@ -66,7 +67,8 @@
 			  </div>
 			</nav>			
   	</div>
-
+		
+		<!-- Меню десктоп -->
   	<div id="menu-wrap" class="container-fluid header d-none d-lg-block sticky-top">			
 			<nav class="row navbar navbar-light">
 				<div id="header-content" class="ml-auto mr-auto">
@@ -115,7 +117,8 @@
 			  </div>
 			</nav>			
   	</div>
-
+		
+		<!-- Плитки -->
 		<div id="tiles-wrap" class="dashboard display-animation">
 		  <a class="tile tile-lg tile-sqr tile-white ripple-effect" href="#">
 		    <span class="content-wrapper">

@@ -1295,7 +1295,9 @@ body {
 }
 
 
-@media screen and (min-device-width: 320px) {  }
+@media screen and (min-device-width: 320px) { 
+
+}
 
 @media screen and (min-device-width: 360px) {}
 
@@ -1307,10 +1309,10 @@ body {
 
 @media screen and (min-device-width: 1366px) {}
 
-
 .tile-white {
   background-color: #fff;
   border: 1px solid #CCCCCC;
+  border-radius: 3px;  
 }
 
 .tile-white .tile-content,

@@ -1284,11 +1284,15 @@ body {
   }
 }
 
-
+/*Переопределенные мною стили. Те, что для мобильных - в style.css*/
 .tile-white {
   background-color: #fff;
   border: 1px solid #CCCCCC;
   border-radius: 3px;  
+}
+
+.tile-holder {
+  margin-top: 10px;
 }
 
 .tile-white .tile-content,

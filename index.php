@@ -42,14 +42,22 @@
 			      	<img class="viber-icon" src="imgs/connect/viber.png" width="25" height="25" alt="">
 			      	<img class="telegram-icon" src="imgs/connect/telegram.png" width="25" height="25" alt="">    
 			      </div>
+			      <div class="registr-wrap">
+							<div class="registr-content">
+								<span>
+									<img src="imgs/lock.svg" width="12" height="12" alt="">   
+									<a href="#" target="_blank">Вход</a>&nbsp;&nbsp;
+								</span>
+								<a href="#" target="_blank">Регистрация</a>
+							</div>    
+			      </div>
 			      <a class="icon-cart" href="#" target="_blank">
 			      	<span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantaty-goods">3</span>
 			      	<img class="img-fluid" src="imgs/connect/cart.svg" width="25" height="25" alt=""> 
 			      </a> 
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">          
 			        <img class="phone-icon" src="imgs/connect/phone.svg" width="17" height="17" alt="">
-			        <div class="phone-digits">+7 495 270 22 34</div>
-        
+			        <div class="phone-digits">+7 495 270 22 34</div>        
 			      </div>
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">          
 			        <div class="phone-digits">+7 977 270 22 34</div>        
@@ -63,31 +71,35 @@
 			<nav class="row navbar navbar-light">
 				<div id="header-content" class="ml-auto mr-auto">
 			    <div class="col-auto d-flex align-items-center">
-
-						<div id="menu-content">
-							
+						<div id="menu-content">							
 							<ul class="nav">
 							  <li class="nav-item">
 							    <a class="nav-link active" href="/">Главная</a>
-							  </li>							  
-					
-						    <div class="btn-group">
+							  </li>			  
+								<div class="btn-group">
 						      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог	        
 						      </button>
 						      <div class="dropdown-menu">
 						        <a class="dropdown-item" href="#">Откосы</a>
-						        <div class="dropdown-divider"></div>
-						        
-						        <a class="dropdown-item" href="#">Москитные сетки</a>
-						        <div class="dropdown-divider"></div>
-						        
+						        <div class="dropdown-divider"></div>						        						        
+						        <a class="dropdown-item" href="moskit.php" target="_blank">Москитные сетки</a>
+						        <div class="dropdown-divider"></div>						        
 						        <a class="dropdown-item" href="#">Подоконники / Ремонтные накладки</a>
-						        <div class="dropdown-divider"></div>
-						        
+						        <div class="dropdown-divider"></div>					        
 						        <a class="dropdown-item" href="#">Материалы для монтажа</a>
+						        <div class="dropdown-divider"></div>	
+						        <a class="dropdown-item" href="#">Уплотнители</a>
+						        <div class="dropdown-divider"></div>	
+						        <a class="dropdown-item" href="#">Фурнитура / Ручки / Накладки</a>
+						        <div class="dropdown-divider"></div>	
+						        <a class="dropdown-item" href="#">Отливы / Козырьки</a>
+						        <div class="dropdown-divider"></div>	
+						        <a class="dropdown-item" href="#">Панели ПВХ / Сайдинг / Ламинат</a>
+						        <div class="dropdown-divider"></div>	
+						        <a class="dropdown-item" href="#">Пиломатериалы</a>
+						        <div class="dropdown-divider"></div>	
 						      </div>
-						    </div>	
-							  
+						    </div>							  
 							  <li class="nav-item">
 							    <a class="nav-link" href="price.php" target="_blank">Доставка</a>
 							  </li>
@@ -98,9 +110,7 @@
 							    <a class="nav-link" href="price.php" target="_blank">Контакты</a>
 							  </li>
 							</ul>
-
 						</div>
-
 			    </div>
 			  </div>
 			</nav>			

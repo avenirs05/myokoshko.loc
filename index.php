@@ -5,10 +5,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-
+    
+		
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/tiles.css" rel="stylesheet">
+   
+    <link href="css/menu-mobile.css" rel="stylesheet">
+
     <link href="style.css" rel="stylesheet">
   </head>
 
@@ -58,10 +61,10 @@
 			      </a> 
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">          
 			        <img class="phone-icon" src="imgs/connect/phone.svg" width="17" height="17" alt="">
-			        <div class="phone-digits">+7 495 270 22 34</div>        
+			        <div class="phone-digits">+7 (495) 999-18-14</div>        
 			      </div>
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">          
-			        <div class="phone-digits">+7 977 270 22 34</div>        
+			        <div class="phone-digits">+7 (977) 270 22 34</div>        
 			      </div>
 			    </div>
 			  </div>
@@ -76,7 +79,7 @@
 						<div id="menu-content">							
 							<ul class="nav">
 							  <li class="nav-item">
-							    <a class="nav-link active" href="/">Главная</a>
+							    <a class="nav-link" href="/">Главная</a>
 							  </li>			  
 								<div class="btn-group">
 						      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог	        
@@ -117,6 +120,58 @@
 			  </div>
 			</nav>			
   	</div>
+
+  	<!-- Menu mobile -->
+    <div id="header-mob" class="pos-f-t sticky-top d-lg-none">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+
+					<!-- Contenedor -->
+					<ul id="accordion" class="accordion list-unstyled">
+					  <li>	  	
+							<div class="link"><a href="#">Главная</a></div>
+						</li>
+					  <li>
+					    <div class="link">Каталог<i class="fa fa-chevron-down"></i></div>
+					    <ul class="submenu">
+					      <li><a href="#">Откосы</a></li>
+					      <li><a href="#">Москитные сетки</a></li>
+					      <li><a href="#">Подоконники / Ремонтные накладки</a></li>
+					      <li><a href="#">Материалы для монтажа</a></li>
+					      <li><a href="#">Уплотнители</a></li>
+					      <li><a href="#">Фурнитура / Ручки / Накладки</a></li>
+					      <li><a href="#">Отливы / Козырьки</a></li>
+					      <li><a href="#">Панели ПВХ / Сайдинг / Ламинат</a></li>
+					      <li><a href="#">Пиломатериалы</a></li>
+					    </ul>
+					  </li>
+					  <li>	  	
+							<div class="link"><a href="#">Доставка</a></div>
+						</li>
+					  <li>	  	
+							<div class="link"><a href="#">Оплата</a></div>
+						</li>
+					  <li>	  	
+							<div id="last-child-menu-mob" class="link"><a href="#">Контакты</a></div>
+						</li>
+					</ul>
+
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark no-gutters">
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+        <div class="col d-flex align-items-center justify-content-end">			
+        		<!-- <img class="phone-icon" src="imgs/connect/phone-white.svg" width="15" height="15" alt=""> -->
+      			<span class="phone-digits">+7 (495) 999-18-14</span>
+      			<a class="icon-cart" href="#" target="_blank">
+      			  <span id="quantaty-goods-mob">3</span>
+      				<img class="img-fluid" src="imgs/connect/cart-white.svg" width="30" height="30" alt=""> 
+      			</a> 
+      	</div>
+      </nav>       
+    </div>
 		
 		<!-- Плитки -->
 		<div id="tiles-wrap" class="dashboard display-animation">
@@ -215,10 +270,14 @@
 
 	
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 
 	<!-- Tiles -->
 	<script src="js/tiles.js"></script>
+
+	<!-- Menu mobile -->
+	<script src="js/menu-mobile.js"></script>
 
 
 	<!-- My Own Js-scripts -->

@@ -152,6 +152,86 @@ a {
 	margin-right: -2px;
 }
 
+#header-mob {
+	color: #fff;
+}
+
+#header-mob button.navbar-toggler {
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#header-mob button.navbar-toggler:focus {
+	border: none;
+	box-shadow: none;
+	outline: 0;
+}
+
+#header-mob .phone-digits {
+	font-size: 20px;
+}
+
+#header-mob .navbar-toggler {
+	margin-left: 5px;
+}
+
+#header-mob .icon-cart {
+	margin-right: 7px;
+}
+
+#header-mob .list-unstyled a {
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 5px;
+	padding-top: 4px; 
+}
+
+#header-mob .accordion .link {
+	padding: 15px 15px 15px 15px;
+}
+
+#header-mob .submenu { 
+	list-style-type: none;
+}
+
+#header-mob #quantaty-goods-mob {
+	position: absolute;
+	top: 5px;
+	color: #E7501E;
+	right: 22px;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+
+#header-mob .icon-cart {
+	margin-left: 15px;
+}
+
+#header-mob .phone-icon {
+	margin-right: 5px;
+	margin-top: 4px;
+}
+
+#header-mob #accordion {
+	margin: 0;
+	border-radius: 2px;
+}
+
+#header-mob #accordion .link {
+	background-color: #343A40;
+	outline: none;
+}
+
+#header-mob #accordion #last-child-menu-mob {
+	border-bottom: 1px solid #343A40;
+}
+
+/*#header-mob #accordion .fa-chevron-down::before {
+    content: url('/imgs/shevron-down.png');
+}*/
+
 #menu-wrap #menu-content {
 	padding-bottom: 8px;
 	padding-top: 5px;

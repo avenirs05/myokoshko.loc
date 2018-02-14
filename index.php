@@ -125,8 +125,7 @@
     <div id="header-mob" class="pos-f-t sticky-top d-lg-none">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-
-					<!-- Contenedor -->
+					<!-- Меню -->
 					<ul id="accordion" class="accordion list-unstyled">
 					  <li>	  	
 							<div class="link"><a href="#">Главная</a></div>
@@ -155,7 +154,6 @@
 							<div id="last-child-menu-mob" class="link"><a href="#">Контакты</a></div>
 						</li>
 					</ul>
-
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark no-gutters">
@@ -171,6 +169,18 @@
       			</a> 
       	</div>
       </nav>       
+    </div>
+		
+		<!-- Main-screen for mobile -->
+    <div class="container-fluid d-lg-none logo-h-wrap-mob">
+    	<div class="row">
+    		<div class="col-12 text-center logo-content">
+    			<img class="logo-mob" src="imgs/logo.png" alt="">
+    		</div>
+    		<div class="col-12 text-center">
+    			<h1 id="what-sell-mob">Комплектующие для окон</h1>
+    		</div>
+    	</div>		    
     </div>
 		
 		<!-- Плитки -->

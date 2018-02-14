@@ -183,8 +183,8 @@ a {
 #header-mob .list-unstyled a {
 	color: #fff;
 	text-decoration: none;
-	padding-bottom: 5px;
-	padding-top: 4px; 
+	padding-bottom: 4px;
+	padding-top: 5px; 
 }
 
 #header-mob .accordion .link {
@@ -272,6 +272,25 @@ a {
 	margin: 0;
 }
 
+.logo-h-wrap-mob a {
+	display: block;
+}
+
+.logo-h-wrap-mob h1 {
+	margin-top: 10px;
+	color: #289dcc;
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.logo-h-wrap-mob .logo-content {
+	margin-top: 10px;
+}
+
+#tiles-wrap .title:hover {
+	text-decoration: none;
+}
 
 @media screen and (max-device-width: 991px) {
 	.tile-holder {
@@ -336,6 +355,9 @@ a {
 	#tiles-wrap .title {
 		font-size: 12px;
 	}
+	.logo-h-wrap-mob .logo-mob {
+		height: 50px;
+	}
 }
 
 @media screen and (min-device-width: 360px) {
@@ -347,6 +369,9 @@ a {
 							and (max-device-width: 767px) {	
 	.tile-lg.tile-sqr {
 		width: 32.66%;
+	}
+	.logo-h-wrap-mob h1 {
+		font-size: 22px;
 	}
 }
 
@@ -379,6 +404,12 @@ a {
 		margin: 0 auto; 
 		width: 94.5%;
 	}
+	#tiles-wrap .title {
+		font-size: 15px;
+	}
+	.logo-h-wrap-mob .logo-mob {
+		height: 60px;
+	}
 }
 
 @media screen and (min-device-width: 768px) 
@@ -403,6 +434,9 @@ a {
 	#tiles-wrap {
 		margin: 0 auto; 
 		width: 768px;
+	}
+	.logo-h-wrap-mob h1 {
+		font-size: 28px;
 	}
 }
 

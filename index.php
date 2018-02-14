@@ -64,7 +64,7 @@
 			        <div class="phone-digits">+7 (495) 999-18-14</div>        
 			      </div>
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">          
-			        <div class="phone-digits">+7 (977) 270 22 34</div>        
+			        <div class="phone-digits">+7 (977) 270-22-34</div>        
 			      </div>
 			    </div>
 			  </div>

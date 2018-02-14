@@ -314,7 +314,7 @@ a {
 	.tile-lg.tile-sqr {
 		width: 49%;
 		display: inline-block;
-		margin-bottom: 1%;
+		margin-bottom: 0.5%;
 	}
 	#tiles-wrap.dashboard > * {
 		float: none;

@@ -228,10 +228,6 @@ a {
 	border-bottom: 1px solid #343A40;
 }
 
-/*#header-mob #accordion .fa-chevron-down::before {
-    content: url('/imgs/shevron-down.png');
-}*/
-
 #menu-wrap #menu-content {
 	padding-bottom: 8px;
 	padding-top: 5px;
@@ -342,11 +338,51 @@ a {
 }
 
 @media screen and (min-device-width: 768px) 
-							and (max-device-width: 991px) {
+							and (max-device-width: 991px) and (orientation:landscape){
 	.tile-lg.tile-sqr {
 		width: 45%;
 		margin-left: 2.5%;
 		margin-right: 2.5%;
+	}
+	.header #header-content {
+		padding-left: 0 auto; 
+		width: 940px;
+	}
+	#menu-wrap #menu-content {
+		background-color: #005BA6;
+		width: 100%;
+	}
+	#menu-wrap {
+		padding-top: 0px;
+	}
+	#tiles-wrap {
+		margin: 0 auto; 
+		width: 94.5%;
+	}
+}
+
+@media screen and (min-device-width: 768px) 
+							and (max-device-width: 991px) and (orientation:portrait) {
+  .tile-lg.tile-sqr {
+  	width: 45%;
+  	margin-left: 2.5%;
+  	margin-right: 2.5%;
+  }
+  .header #header-content {
+  	padding-left: 0 auto; 
+  	width: 940px;
+  }
+  #menu-wrap #menu-content {
+  	background-color: #005BA6;
+  	width: 100%;
+  }
+  #menu-wrap {
+  	padding-top: 0px;
+  }
+
+	#tiles-wrap {
+		margin: 0 auto; 
+		width: 768px;
 	}
 }
 
@@ -390,6 +426,13 @@ a {
 @media screen and (min-device-width: 1366px) {
 
 }
+
+
+
+
+
+
+
 
 
 

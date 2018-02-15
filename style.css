@@ -292,6 +292,74 @@ a {
 	text-decoration: none;
 }
 
+.rest-content-wrap {
+	width: 1130px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.rest-content-wrap h2 {
+	margin-bottom: 20px;
+	margin-top: 25px;
+	color: #005BA6;
+}
+
+.advantages {
+	margin-bottom: 15px;
+}
+
+.advantages .card-img-top {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-top: 10px;
+}
+
+.advantages .card-body {
+	text-align: center;
+}
+
+.advantages .col-3 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.advantages-mob ul {
+	font-size: 20px;
+	list-style-image: url(imgs/advantages/bullit-green.png);
+	margin-left: 20px;
+}
+
+.advantages-mob ul li {
+	margin-bottom: 10px;
+}
+
+.footer {
+	color: #fff;
+}
+
+.connect-us-mob {
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+.connect-us-mob h2 {
+	font-size: 24px;
+	color: #005BA6;
+	margin-bottom: 15px;
+}
+
+.connect-us-mob .two-phone-inline {
+	font-size: 14px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
 @media screen and (max-device-width: 991px) {
 	.tile-holder {
 		margin-top: 10px;
@@ -319,6 +387,9 @@ a {
 	.tile-lg .content-wrapper .tile-content {
 	    height: 270px;
 	    padding: 20px;
+	}
+	.rest-content-wrap h2 {
+			font-size: 24px;
 	}
 }
 
@@ -358,6 +429,11 @@ a {
 	.logo-h-wrap-mob .logo-mob {
 		height: 50px;
 	}
+	.rest-content-wrap {
+		width: 100%;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
 }
 
 @media screen and (min-device-width: 360px) {
@@ -372,6 +448,11 @@ a {
 	}
 	.logo-h-wrap-mob h1 {
 		font-size: 22px;
+	}
+	.rest-content-wrap {
+		width: 100%;
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 }
 
@@ -404,6 +485,9 @@ a {
 		margin: 0 auto; 
 		width: 94.5%;
 	}
+	.rest-content-wrap {
+		
+	}
 	#tiles-wrap .title {
 		font-size: 15px;
 	}
@@ -435,6 +519,12 @@ a {
 		margin: 0 auto; 
 		width: 768px;
 	}
+	.rest-content-wrap {
+		margin: 0 auto; 
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
 	.logo-h-wrap-mob h1 {
 		font-size: 28px;
 	}
@@ -456,7 +546,8 @@ a {
 		background-color: #005BA6;
 		width: 100%;
 	}
-	#tiles-wrap {
+	#tiles-wrap, 
+	.rest-content-wrap {
 		margin: 0 auto; 
 		width: 930px;
 	}
@@ -469,7 +560,8 @@ a {
 	.header #header-content {
 		width: 1140px;
 	}
-	#tiles-wrap {
+	#tiles-wrap,
+	.rest-content-wrap {
 		width: 1130px;
 	}
 	.tile-lg.tile-sqr {

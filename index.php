@@ -274,8 +274,146 @@
 		        </span>
 		      </span>      
 		    </span>
-		  </a>
+		  </a>		  
 		</div>
+
+
+		<div class="rest-content-wrap about-company">
+			<h2 class="text-center">О компании</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda?</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda?</p>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda?</p>
+			<hr>
+
+
+		<!-- Advantages desktop -->
+			<div class="container-fluid d-none d-lg-block advantages">
+				<h2 class="text-center">Наши преимущества</h2>
+				<div class="row">
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-01.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Гарантия низкой цены</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-02.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Гарантия на изделия</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-03.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Соблюдаем стандарты</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-04.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Контроль качества</p>
+						  </div>
+						</div>
+					</div>
+				</div>		 
+				<div class="row">
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-01.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Точность</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-02.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Удобство</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-03.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Скорость</p>
+						  </div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+						  <img class="card-img-top" src="imgs/advantages/adv-04.jpg" alt="">
+						  <div class="card-body">
+						    <p class="card-text">Экологичные материалы</p>
+						  </div>
+						</div>
+					</div>
+				</div>	   
+			</div>
+			<!-- Advantages mobile -->
+			<div class="container-fluid d-lg-none advantages-mob">
+				<h2 class="text-center">Наши преимущества</h2>
+				<ul>
+					<li>Гарантия низкой цены</li>
+					<li>Гарантия на изделия</li>
+					<li>Соблюдаем стандарты</li>
+					<li>Контроль качества</li>
+					<li>Точность</li>
+					<li>Удобство</li>
+					<li>Скорость</li>
+					<li>Экологичные материалы</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- Advantages mobile -->
+		<div class="container-fluid d-lg-none text-center connect-us-mob">
+			<h2 class="text-center">Связаться с нами</h2>
+			<div class="connects-icon-wrap">
+				<a class="icon-link" href="#" target="_blank">
+					<img class="img-fluid vk-icon" src="imgs/connect/vk.svg" width="25" height="25" alt="">
+				</a>
+				<a class="icon-link" href="#" target="_blank">
+					<img class="img-fluid instagram-icon" src="imgs/connect/instagram.svg" width="27" height="27" alt="">
+				</a>
+				<a class="icon-link" href="#" target="_blank">
+					<img class="img-fluid facebook-icon" src="imgs/connect/facebook.svg" width="29" height="29" alt=""> 
+				</a>  
+				<a class="icon-link" href="#" target="_blank">
+					<img src="imgs/connect/odnokl.svg" width="25" height="25" alt=""> 
+				</a>  
+				<img class="whatsapp-icon" src="imgs/connect/whatsapp.svg" width="27" height="27" alt="">
+				<img class="viber-icon" src="imgs/connect/viber.png" width="25" height="25" alt="">
+				<img class="telegram-icon" src="imgs/connect/telegram.png" width="25" height="25" alt="">
+				<div class="two-phone-inline">
+					Тел.: +7 (495) 999-18-14; +7 (977) 278-12-43; 
+				</div> 
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="container-fluid">
+			<nav class="row navbar navbar-dark bg-dark footer">
+				<div class="col text-center d-none d-lg-block">
+					<span class="copyright">&copy; myokoshko.ru, 2017</span>
+				</div>
+				<div class="col text-center d-lg-none">
+					<span class="copyright">&copy; myokoshko.ru, 2017</span>
+				</div>
+			</nav>
+		</div>
+
+
 
 
 	

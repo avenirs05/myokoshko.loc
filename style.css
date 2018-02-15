@@ -494,6 +494,9 @@ a {
 	.logo-h-wrap-mob .logo-mob {
 		height: 60px;
 	}
+	.sticky-top {
+		position: static;
+	}
 }
 
 @media screen and (min-device-width: 768px) 

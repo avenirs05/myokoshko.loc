@@ -17,7 +17,7 @@ jQuery(document).ready(function () {
 
 		var calculatedRow = 
 			'<tr class="item-net-row">' +
-	      '<td>Москитная сетка: ' + 
+	      '<td class="text-goods">Москитная сетка: ' + 
 	      	'<i>вид: </i>' + getLinenText() + ', ' + 
 	        '<i>профиль рамки: </i>' + getProfileText() + ', ' +
 	        '<i>цвет рамки: </i>' + getColorText() + ', ' +
@@ -25,27 +25,27 @@ jQuery(document).ready(function () {
 	        '<i>крепление: </i>' + getFasteningText() + ', ' +
 	        '<i>фетр: </i>' + getFetrText() + ', ' +
 	        '<i>саморезы: </i>' + getScrewsText() + ', ' +
-	        '<i>ширина сетки: </i>' + getNetWidth() + ', ' +
-	        '<i>высота сетки: </i>' + getNetHeight() +
+	        '<i>ширина сетки: </i>' + getNetWidth() + ' мм, ' +
+	        '<i>высота сетки: </i>' + getNetHeight() + ' мм' +
 	      '</td>' + 
-	      '<td>' + getQuantityCalc() + '</td>' +
-	      '<td>' + calcPriceOneMoskit() + '</td>' +
-	      '<td>' + calcPriceQuantityMoskit() + '</td>' +
+	      '<td class="quantity-goods">' + getQuantityCalc() + '</td>' +
+	      '<td class="price-one-goods">' + calcPriceOneMoskit() + '</td>' +
+	      '<td class="sum-goods">' + calcPriceQuantityMoskit() + '</td>' +
 	      '<td><img src="/imgs/close.png" width="10" alt=""></td>' +
 	    '</tr>'; 
 
 	  var finalRow = 
 	  	'<tr class="final-row">' +
 	      '<td class="text-right"><b>Итого</b></td>' +
-	      '<td>12</td>' +
-	      '<td></td>' +
-	      '<td><b>25000</b></td>' +
+	      '<td class="final-quantity-goods"></td>' +
+	      '<td style="border-right: 1px solid #f5f5f5"></td>' +
+	      '<td class="final-sum"><b></b></td>' +
 	      '<td></td>' +	  	  	      
 	  	'</tr>';
 
 		$('table').parent().parent().show();
 
-
+		// Итоговая таблица после нажатия "к рассчету"
 		if ( $('table tr').length == 1 ) {
 						if ( $('table tr').hasClass('final-row') == false ) {
 									 $('table tbody').append(calculatedRow);
@@ -53,13 +53,29 @@ jQuery(document).ready(function () {
 						}					
 		} else $(calculatedRow).insertBefore( $('table .final-row') );
 
+		// Подставляем в итоговый ряд итоговое количество товаров
+		$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
+
+		// Подставляем в итоговый ряд итоговую сумму товаров
+		$('table .final-row .final-sum b').text( calcFinalSum() );
+
+		//console.log( calcFinalSum() );
+
+
+
 	});
 
 
 	// Удаление строчки из итоговой таблицы заказа москитной сетки
-	$(document).on('click', 'table img', function(){
+	$(document).on('click', 'table img', function() {
 			$(event.target).parent().parent().remove();
-			//$('.final-row').remove();
+			
+			if ( $('table tr').length == 2 ) {
+						$('table .final-row').remove();
+			}
+
+			$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
+			$('table .final-row .final-sum b').text( calcFinalSum() );
 
 	});
 

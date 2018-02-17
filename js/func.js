@@ -37,6 +37,31 @@
 	function getQuantityCalc () {
 		return $('#quantity').val();
 	}
+
+
+	// Возвращает итоговое количество единиц товара
+	function calcFinalQuantity () {
+			var res = 0;
+			
+			$('table .item-net-row .quantity-goods').each(function(indx, el) {
+				res = res + Number( $(el).text() );
+			});
+			
+			return res;
+	}
+
+
+	// Возвращает итоговую сумму
+	function calcFinalSum () {
+			var res = 0;
+			
+			$('table .item-net-row .sum-goods').each(function(indx, el) {
+				res = res + Number( $(el).text() );
+			});
+			
+			return res;
+	}
+
 	
 	// Возвращает сумму в зависимости от вида полотна
 	function getLinenSum () {

@@ -1,28 +1,36 @@
-	// Расчет стоимости москитной сетки
-	function calcCostMoskit (e) {
-		e.preventDefault();
+	// Расчет стоимости 1 -ой москитной сетки после калькуляции
+	function calcPriceOneMoskit () {		
+			var res;
+			var quantity = $('#quantity').val();
 
-		var res;
-		var quantity = $('#quantity').val();
+			// Площадь в метрах (если длина и ширина в мм)
+			var square = $('#width-net').val() * $('#height-net').val() / 1000000;
 
-		// Площадь в метрах (если длина и ширина в мм)
-		var square = $('#width-net').val() * $('#height-net').val() / 1000000;
+			if (square < 1) {
+						square = 1;
+			}
 
-		if (square < 1) {
-					square = 1;
-		}
+			res = (square * getLinenSum() )          + 
+														 getProfileSum()   +  
+														 getColorSum()     + 
+														 getHandleSum()    + 
+														 getFasteningSum() + 
+														 getFetrSum()      +
+														 getScrewsSum(); 
+		  
+		  return res;
+			res *= quantity;
+	}
 
-		res = (square * getLinenSum() )          + 
-													 getProfileSum()   +  
-													 getColorSum()     + 
-													 getHandleSum()    + 
-													 getFasteningSum() + 
-													 getFetrSum()      +
-													 getScrewsSum(); 
-					 
-		res *= quantity;
 
-		$('#final-sum').text(res);
+	// Расчет стоимости москитной сетки после калькуляции с учетом их количества
+	function calcPriceQuantityMoskit () {
+			var res;
+			var quantity = $('#quantity').val();
+
+			res = quantity * calcPriceOneMoskit();
+
+			return res;
 	}
 
 	

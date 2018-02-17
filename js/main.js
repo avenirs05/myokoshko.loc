@@ -12,6 +12,11 @@ jQuery(document).ready(function () {
 	});
 
 	// Расчет стоимости москитной сетки
-	$('#btn-calc').click(calcCostMoskit);
+	$('#btn-calc').click(function(e) {
+		$('table').parent().parent().show();
+		e.preventDefault();
+		console.log(calcPriceOneMoskit())
+		console.log(calcPriceQuantityMoskit())
+	});
 
 });

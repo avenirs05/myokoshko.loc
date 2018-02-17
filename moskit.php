@@ -98,7 +98,7 @@
 	  	  	<button id="btn-calc" type="submit" class="btn btn-primary">Добавить к рассчету</button>
 	  	  </div>
   	  </div>
-  	  <div class="row">
+  	  <div class="row" style="display: none;">
 	  	  <div class="col-lg">
 	  	  	<table class="table table-bordered">
 	  	  	  <thead>
@@ -113,18 +113,18 @@
 	  	  	  </thead>
 	  	  	  <tbody>
 	  	  	    <tr class="item-net-row">
-	  	  	      <th>1</th>
+	  	  	      <td>1</td>
 	  	  	      <td>Mark</td>
 	  	  	      <td>Otto</td>
 	  	  	      <td>@mdo</td>
 	  	  	      <td>Otto</td>
-	  	  	      <td>X</td>
+	  	  	      <td><img src="/imgs/close.png" width="10" alt=""></td>
 	  	  	    </tr>
 	  	  	    <tr class="final-row">
-	  	  	      <td colspan="2" class="text-right">Всего</td>
+	  	  	      <td colspan="2" class="text-right"><b>Итого</b></td>
 	  	  	      <td>12</td>
 	  	  	      <td></td>
-	  	  	      <td>25000</td>
+	  	  	      <td><b>25000</b></td>
 	  	  	      <td></td>	  	  	      
 	  	  	    </tr>
 	  	  	  </tbody>

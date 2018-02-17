@@ -33,6 +33,10 @@
 	font-size: 20px;
 }
 
+table td img:hover {
+	cursor: pointer;
+} 
+
 @media screen and (max-device-width: 991px) {
 	.rest-content-wrap h1 {
 		margin-top: 20px;

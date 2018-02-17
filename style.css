@@ -1,8 +1,3 @@
-/*.sticky-top {
-    position: fixed !important;
-    width: 100%;
-}*/
-
 @font-face {
 	font-family: 'Open Sans Condensed', sans-serif;
 	src: url("/fonts/OpenSansCondensed-Light.ttf");
@@ -292,6 +287,10 @@ a {
 	text-decoration: none;
 }
 
+#tiles-wrap .tile:hover {
+	text-decoration: none;
+}
+
 .rest-content-wrap {
 	width: 1130px;
 	margin-left: auto;
@@ -572,89 +571,3 @@ a {
 	}
 }
 
-@media screen and (min-device-width: 1366px) {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-@media screen and (max-device-width: 351px) { 
-
-}
-
-@media screen and (max-device-width: 991px) { 
-
-}
-
-
-@media screen and (min-device-width: 320px) {  }
-
-@media screen and (min-device-width: 360px) {}
-
-@media screen and (min-device-width: 768px) {}
-
-@media screen and (min-device-width: 992px) { 
-
-@media screen and (min-device-width: 1200px) {}
-
-@media screen and (min-device-width: 1366px) {}

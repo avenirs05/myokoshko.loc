@@ -10,13 +10,13 @@
 						square = 1;
 			}
 
-			res = (square * getLinenSum() )          + 
-														 getProfileSum()   +  
-														 getColorSum()     + 
-														 getHandleSum()    + 
-														 getFasteningSum() + 
-														 getFetrSum()      +
-														 getScrewsSum(); 
+			res = (square * getLinenSum() )      + 
+												 getProfileSum()   +  
+												 getColorSum()     + 
+												 getHandleSum()    + 
+												 getFasteningSum() + 
+												 getFetrSum()      +
+												 getScrewsSum(); 
 		  
 		  return res;
 			res *= quantity;
@@ -33,8 +33,12 @@
 			return res;
 	}
 
+	// Возвращает количество единиц товара, введенное пользователем при калькуляции
+	function getQuantityCalc () {
+		return $('#quantity').val();
+	}
 	
-	// Вид полотна
+	// Возвращает сумму в зависимости от вида полотна
 	function getLinenSum () {
 		if ( $('#linen-content option').filter(':selected').val() == 'linen-standard' ) {
 					return rate.linen.standard;
@@ -52,6 +56,24 @@
 		}
 	}
 
+	// Возвращает текстовое значение в зависимости от вида полотна
+	function getLinenText () {
+		if ( $('#linen-content option').filter(':selected').val() == 'linen-standard' ) {
+					return text.linen.standard;
+		}
+		if ( $('#linen-content option').filter(':selected').val() == 'linen-antikat' ) {			
+					return text.linen.anticat;
+		}
+
+		if ( $('#linen-content option').filter(':selected').val() == 'linen-antidust' ) {
+					return text.linen.antidust;
+		}
+
+		if ( $('#linen-content option').filter(':selected').val() == 'linen-maxivision' ) {
+					return text.linen.maxivision;
+		}
+	}
+
 	// Считает профиль рамки
 	function getProfileSum () {
 			if ( $('#profile-content option').filter(':selected').val() == 'profile-standard' ) {
@@ -64,6 +86,21 @@
 						return rate.profile.vertex;
 			}
 	}
+
+
+	// Возвращает текстовое значение в зависимости от профиля рамки
+	function getProfileText () {
+			if ( $('#profile-content option').filter(':selected').val() == 'profile-standard' ) {
+						return text.profile.standard;
+			}
+			if ( $('#profile-content option').filter(':selected').val() == 'profile-powerfull' ) {
+						return text.profile.powerfull;
+			}
+			if ( $('#profile-content option').filter(':selected').val() == 'profile-vertex' ) {
+						return text.profile.vertex;
+			}
+	}
+
 
   // Считает цвет рамки
 	function getColorSum () {
@@ -96,7 +133,39 @@
 			}
 	}
 
-	// Ручка
+
+  // // Возвращает текстовое значение в зависимости от цвета
+	function getColorText () {
+			if ( $('#color-content option').filter(':selected').val() == 'color-white-not-vertex' ) {
+						return text.color.whiteNotVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-brown-not-vertex' ) {
+						return text.color.brownNotVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-white-vertex' ) {
+						return text.color.whiteVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-brown-vertex' ) {
+						return text.color.brownVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-grey-vertex' ) {
+						return text.color.greyVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-gold-oak-vertex' ) {
+						return text.color.goldOakVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-mahogany-vertex' ) {
+						return text.color.mahoganyVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-stained-oak-vertex' ) {
+						return text.color.stainedOakVertex;
+			}
+			if ( $('#color-content option').filter(':selected').val() == 'color-ral' ) {
+						return text.color.ral;
+			}
+	}
+
+	// Ручка сумма
 	function getHandleSum () {
 			if ( $('#handle-content option').filter(':selected').val() == 'handle-pvh-simple' ) {
 						return rate.handle.pvhSimple;
@@ -113,7 +182,24 @@
 	}
 
 
-	// Крепление
+	// Ручка текст
+	function getHandleText () {
+			if ( $('#handle-content option').filter(':selected').val() == 'handle-pvh-simple' ) {
+						return text.handle.pvhSimple;
+			}
+			if ( $('#handle-content option').filter(':selected').val() == 'handle-pvh-transparent' ) {
+						return text.handle.pvhTransparent;
+			}
+			if ( $('#handle-content option').filter(':selected').val() == 'handle-pvh-brown' ) {
+						return text.handle.pvhBrown;
+			}
+			if ( $('#handle-content option').filter(':selected').val() == 'handle-metal' ) {
+						return text.handle.metal;
+			}
+	}
+
+
+	// Крепление - сумма
 	function getFasteningSum () {
 			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-pvh-2-pairs' ) {
 						return rate.fastening.pvh2Pairs;
@@ -138,7 +224,34 @@
 			}
 	}
 
-	// Саморезы
+
+	// Крепление - текст
+	function getFasteningText () {
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-pvh-2-pairs' ) {
+						return text.fastening.pvh2Pairs;
+			}
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-metal-2-pairs' ) {
+						return text.fastening.metal2Pairs;
+			}
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-plunger-4' ) {
+						return text.fastening.plunger4;
+			}
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-baran-4' ) {
+						return text.fastening.baran4;
+			}
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-metal-inside' ) {
+						return text.fastening.metalInside;
+			}
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-vertex-9-mm' ) {
+						return text.fastening.vertex9mm;
+			}
+			if ( $('#fastening-content option').filter(':selected').val() == 'fastening-vertex-13-mm' ) {
+						return text.fastening.vertex13mm;
+			}
+	}
+
+
+	// Фетр - сумма
 	function getFetrSum () {
 			if ( $('#fetr-content option').filter(':selected').val() == 'fetr-yes' ) {
 						return rate.fetr.fetrYes;
@@ -148,7 +261,19 @@
 			}
 	}
 
-	// Саморезы
+
+	// Фетр - текст
+	function getFetrText () {
+			if ( $('#fetr-content option').filter(':selected').val() == 'fetr-yes' ) {
+						return text.fetr.fetrYes;
+			}
+			if ( $('#fetr-content option').filter(':selected').val() == 'fetr-no' ) {
+						return text.fetr.fetrNo;
+			}
+	}
+
+
+	// Саморезы - сумма
 	function getScrewsSum () {
 			if ( $('#screws-content option').filter(':selected').val() == 'screws-yes' ) {
 						return rate.screws.screwsYes;
@@ -156,7 +281,29 @@
 			if ( $('#screws-content option').filter(':selected').val() == 'screws-no' ) {
 						return rate.screws.screwsNo;
 			}
+	}
 
+
+	// Саморезы - текст
+	function getScrewsText () {
+			if ( $('#screws-content option').filter(':selected').val() == 'screws-yes' ) {
+						return text.screws.screwsYes;
+			}
+			if ( $('#screws-content option').filter(':selected').val() == 'screws-no' ) {
+						return text.screws.screwsNo;
+			}
+	}
+
+
+	// Возвращает ширину сетки
+	function getNetWidth () {
+			return $('#width-net').val();
+	}
+
+
+	// Возвращает высоту сетки
+	function getNetHeight () {
+			return $('#height-net').val();
 	}
 
 

@@ -19,7 +19,7 @@
 				  <label>Профиль рамки</label>
 				  <select name="profile" class="form-control" id="profile-content">
 				    <option value="profile-standard">Стандарт</option>
-				    <option value="profile-powerfull">Усиленая (без импоста)</option>
+				    <option value="profile-powerfull">Усиленный (без импоста)</option>
 				    <option value="profile-vertex">VERTEX</option>						    
 				  </select>
 				</div>		    
@@ -95,16 +95,15 @@
   	  </div>
   	  <div class="row">
 	  	  <div class="col-lg-4">
-	  	  	<button id="btn-calc" type="button" class="btn btn-primary">Добавить к рассчету</button>
+	  	  	<button id="btn-to-estim" type="button" class="btn btn-primary">Добавить к рассчету</button>
 	  	  </div>
   	  </div>
   	  <div class="row" style="display: none;">
 	  	  <div class="col-lg">
 	  	  	<table class="table table-bordered">
 	  	  	  <thead>
-	  	  	    <tr>
-	  	  	      <th scope="col">#</th>
-	  	  	      <th scope="col">Наименование</th>
+	  	  	    <tr>	  	  	      
+	  	  	      <th scope="col">Товар</th>
 	  	  	      <th scope="col">Количество</th>
 	  	  	      <th scope="col">Цена</th>
 	  	  	      <th scope="col">Сумма</th>
@@ -112,14 +111,6 @@
 	  	  	    </tr>
 	  	  	  </thead>
 	  	  	  <tbody>
-
-<!-- 	  	  	    <tr class="final-row">
-	  	  	      <td colspan="2" class="text-right"><b>Итого</b></td>
-	  	  	      <td>12</td>
-	  	  	      <td></td>
-	  	  	      <td><b>25000</b></td>
-	  	  	      <td></td>	  	  	      
-	  	  	    </tr> -->
 	  	  	  </tbody>
 	  	  	</table>
 	  	  </div>

@@ -6,7 +6,7 @@
 }
 
 #net-calc .quest-section {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 #net-calc .quest-section label {
@@ -14,7 +14,7 @@
 	/*color: #289dcc;*/
 }
 
-#net-calc button[type="submit"] {
+#net-calc button[type="button"] {
 	margin-bottom: 30px;
 }
 

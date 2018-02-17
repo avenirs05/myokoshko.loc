@@ -53,3 +53,59 @@
 		}
 	}
 
+
+	var text = {
+		// Вид сетки (полотно)
+		linen: {
+			standard: 'стандарт',
+			anticat: 'aнтикошка Pet screen',
+			antidust: 'антипыль Poll-tex',
+			maxivision: 'максимальный обзор MaxiVision'
+		},
+		// Профиль рамки
+		profile: {
+			standard: 'стандарт',
+			powerfull: 'усиленая (без импоста)',
+			vertex: 'VERTEX'
+		}, 
+		// Цвет рамки
+		color: {
+			whiteNotVertex: 'белый',
+			brownNotVertex: 'коричневый',
+			whiteVertex: 'белый VERTEX',
+			brownVertex: 'коричневый VERTEX',
+			greyVertex: 'серый VERTEX',
+			goldOakVertex: 'золотой дуб VERTEX',
+			mahoganyVertex: 'махагон VERTEX',
+			stainedOakVertex: 'мореный дуб VERTEX',
+			ral: 'RAL (аэрозольная краска)'
+		},
+		// Ручка
+		handle: {
+			pvhSimple: 'ПВХ',
+			pvhTransparent: 'ПВХ прозрачная',
+			pvhBrown: 'ПВХ коричневая',
+			metal: 'металл'
+		},
+		// Крепление
+		fastening: {
+			pvh2Pairs: 'ПВХ (2 пары)',
+			metal2Pairs: 'металл (2 пары)',
+			plunger4: 'плунжер (4 шт)',
+			baran4: 'барашек (4 шт)',
+			metalInside: 'металл (внутреннее)',
+			vertex9mm: 'VERTEX - наплав 9 мм',
+			vertex13mm: 'VERTEX - наплав 13 мм'
+		},
+		// Фетр
+		fetr: {
+			fetrYes: 'есть',
+			fetrNo: 'нет'
+		},
+		// Саморезы
+		screws: {
+			screwsYes: 'есть',
+			screwsNo: 'нет' 
+		}
+	}
+

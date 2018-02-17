@@ -2,7 +2,7 @@
 
 <div class="rest-content-wrap about-company">
 	<h1 class="text-center">Калькулятор расчета стоимости москитной сетки</h1>
-	<form id="net-calc">
+	<form id="net-calc" method="post">
 		
 		<div class="container-fluid">
 		  <div class="row">
@@ -95,7 +95,7 @@
   	  </div>
   	  <div class="row">
 	  	  <div class="col-lg-4">
-	  	  	<button id="btn-calc" type="submit" class="btn btn-primary">Добавить к рассчету</button>
+	  	  	<button id="btn-calc" type="button" class="btn btn-primary">Добавить к рассчету</button>
 	  	  </div>
   	  </div>
   	  <div class="row" style="display: none;">
@@ -112,21 +112,14 @@
 	  	  	    </tr>
 	  	  	  </thead>
 	  	  	  <tbody>
-	  	  	    <tr class="item-net-row">
-	  	  	      <td>1</td>
-	  	  	      <td>Mark</td>
-	  	  	      <td>Otto</td>
-	  	  	      <td>@mdo</td>
-	  	  	      <td>Otto</td>
-	  	  	      <td><img src="/imgs/close.png" width="10" alt=""></td>
-	  	  	    </tr>
-	  	  	    <tr class="final-row">
+
+<!-- 	  	  	    <tr class="final-row">
 	  	  	      <td colspan="2" class="text-right"><b>Итого</b></td>
 	  	  	      <td>12</td>
 	  	  	      <td></td>
 	  	  	      <td><b>25000</b></td>
 	  	  	      <td></td>	  	  	      
-	  	  	    </tr>
+	  	  	    </tr> -->
 	  	  	  </tbody>
 	  	  	</table>
 	  	  </div>
@@ -138,7 +131,7 @@
 	</form>
 </div>
 
-<?php require_once '/layouts/footer.php'; ?>
+<?php require_once 'layouts/footer.php'; ?>
 
 
 

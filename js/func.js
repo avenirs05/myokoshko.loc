@@ -394,6 +394,22 @@
 	}
 
 
+	// Убирает группы разрядов, оставляет (возвращает) строку
+	function unSeparateThousands (str) {
+	    var res = '';
+	    
+	    for (var i = 0; i < str.length; i++) {
+	          if (str[i] === ' ') {
+	                continue;
+	          }
+	          
+	          res += str[i];
+	    }
+	    
+	    return res;
+	}
+
+
 	// Убирает группы разрядов, оставляет возвращает число
 	function unSeparateThousandsAndToNum (str) {
 	    str = str.replace(/\s+/g,'');     

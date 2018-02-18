@@ -27,6 +27,20 @@
 	font-weight: normal;
 }
 
+#wrong-width-height {
+	margin-top: -15px;
+	margin-bottom: 25px;
+}
+
+#net-calc #person-name-wrap,
+#net-calc #person-phone-wrap {
+	color: #005BA6;
+}
+
+#net-calc #btn-submit {
+	margin-bottom: 15px;
+}
+
 table td img:hover {
 	cursor: pointer;
 } 

@@ -24,6 +24,8 @@
 <script src="../js/data.js"></script>
 <script src="../js/func.js"></script>		
 <script src="../js/main.js"></script>
+<script src="../js/jquery.maskedinput.js" type="text/javascript"></script>
+
 
 </body>	
 </html>

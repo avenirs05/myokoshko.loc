@@ -1,5 +1,8 @@
 jQuery(document).ready(function () {  
 
+	// Маска ввода номера телефона
+	$('#person-phone').mask("+7 999 999 99 99", {placeholder: " " });
+
 	// Убрать прилипание меню на странице москитной сетки
 	if ( window.location.href.match(/moskit/) ) {
 		$('#menu-wrap').removeClass('sticky-top');
@@ -34,6 +37,10 @@ jQuery(document).ready(function () {
 					return false;
 		}
 
+		// Появление полей имя, телефон и кнопки "Отправить"
+		$('#person-name-wrap').parent().show();
+		$('#person-phone-wrap').parent().show();
+		$('#btn-submit').parent().parent().show();
 
 		var calculatedRow = 
 			'<tr class="item-net-row">' +

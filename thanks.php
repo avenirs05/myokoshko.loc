@@ -5,8 +5,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col">
-            <div class="text-center">
-                <span>Спасибо за обращение! С вами свяжутся в ближайшее время!</span><br>
+            <div class="text-center" style="font-size: 20px; font-weight: 400; margin-top: 20px;">
+                <span>Спасибо за заявку! С вами свяжутся в ближайшее время!</span><br>
                 <span>Вернуться на <a href="/">Главную.</a></span>
             </div>
         </div>
@@ -17,12 +17,14 @@
 
 $headers = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-$to = 'domosed365365@gmail.com';
+$to = 'domosed365365@gmail.com, 89251439299@mail.ru';
 $subject = "Заявка с сайта myokoshko.ru";
 
 
     $message = '<html><head><title></title></head><body>
-                        <strong>Тема: заявка с сайта myokoshko.ru</strong><br>' .
+                        <b>Заявка с сайта myokoshko.ru</b><br><br>' .
+                        '<b>Имя:</b> ' . $_POST['person-name'] . '<br><br>' .
+                        '<b>Телефон:</b> ' . $_POST['person-phone'] . '<br><br>' .
                         $_POST['order'] . '<br>' . '</body></html>';    
 
     mail($to, $subject, $message, $headers);

@@ -92,13 +92,13 @@
 					</div>			
 				</div>
   	  </div>
-  	  <div class="row">
+  	  <div class="row" style="margin-top: -15px;">
 	  	  <div class="col-lg-12">
-	  	  	<button id="btn-to-estim" type="button" class="btn btn-primary">Добавить к рассчету</button>
+	  	  	<button id="btn-to-estim" type="button" class="btn btn-primary">Добавить к расчету</button>
 					<div id="wrong-width-height" style="display: none;" class="red">Введите правильное значение ширины (высоты) сетки (от 200 до 2500 мм).</div>
 	  	  </div>
   	  </div>
-  	  <div class="row" style="display: none;">
+  	  <div class="row" style="display: none; margin-bottom: 15px;">
 	  	  <div class="col-lg">
 	  	  	<table class="table table-bordered">
 	  	  	  <thead>
@@ -115,10 +115,22 @@
 	  	  	</table>
 	  	  </div>
   	  </div>
-  	  <div class="row">
+  	  <div class="row" style="display: none;">
+  	  	<div id="person-name-wrap" class="col-lg-4 form-group quest-section">
+  	  	  <label for="person-name">Имя<span class="red">*</span></label>
+  	  	  <input type="text" class="form-control" id="person-name" name="person-name" required>
+  	  	</div>	  	  
+  	  </div>
+  	  <div class="row" style="display: none;">
+  	  	<div id="person-phone-wrap" class="col-lg-4 form-group quest-section">
+  	  	  <label for="person-phone">Телефон<span class="red">*</span></label>
+  	  	  <input type="text" class="form-control" id="person-phone" name="person-phone" required>
+  	  	</div>	  	  
+  	  </div>
+  	  <div class="row" style="display: none;">
 	  	  <div class="col-lg-12">
-	  	  	<button id="btn-submit" type="submit" class="btn btn-primary">Отправить заявку</button>
-	  	  </div>
+	  	  	<button id="btn-submit" type="submit" class="btn btn-success">Отправить заявку</button>
+	  	  </div>	  	  
   	  </div>
 		</div>
 		<input id="hidden-text" type="hidden" name="order">

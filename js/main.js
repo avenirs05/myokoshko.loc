@@ -59,7 +59,7 @@ jQuery(document).ready(function () {
 	      '<td class="text-right"><b>Итого</b></td>' +
 	      '<td class="final-quantity-goods"></td>' +
 	      '<td style="border-right: 1px solid #f5f5f5"></td>' +
-	      '<td class="final-sum"><b></b></td>' +
+	      '<td class="final-sum nowrap"><b></b></td>' +
 	      '<td></td>' +	  	  	      
 	  	'</tr>';
 
@@ -77,7 +77,7 @@ jQuery(document).ready(function () {
 		$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
 
 		// Подставляем в итоговый ряд итоговую сумму товаров
-		$('table .final-row .final-sum b').text( calcFinalSum() + 'р.' );
+		$('table .final-row .final-sum b').text( separateThousands (calcFinalSum() ) + ' р.' );
 
 		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
 		$('#hidden-text').val( $('table').parent().html() );

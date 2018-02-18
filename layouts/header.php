@@ -47,7 +47,7 @@
 			      	<img class="viber-icon" src="imgs/connect/viber.png" width="25" height="25" alt="">
 			      	<img class="telegram-icon" src="imgs/connect/telegram.png" width="25" height="25" alt="">    
 			      </div>
-			      <div class="registr-wrap">
+<!-- 			      <div class="registr-wrap">
 							<div class="registr-content">
 								<span>
 									<img src="imgs/lock.svg" width="12" height="12" alt="">   
@@ -55,11 +55,11 @@
 								</span>
 								<a href="#" target="_blank">Регистрация</a>
 							</div>    
-			      </div>
-			      <a class="icon-cart" href="#" target="_blank">
+			      </div> -->
+<!-- 			      <a class="icon-cart" href="#" target="_blank">
 			      	<span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantaty-goods">3</span>
 			      	<img class="img-fluid" src="imgs/connect/cart.svg" width="25" height="25" alt=""> 
-			      </a> 
+			      </a>  -->
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">          
 			        <img class="phone-icon" src="imgs/connect/phone.svg" width="17" height="17" alt="">
 			        <div class="phone-digits">+7 (495) 999-18-14</div>        
@@ -163,10 +163,10 @@
 	      </button>
         <div class="col d-flex align-items-center justify-content-end">			
       			<span class="phone-digits">+7 (495) 999-18-14</span>
-      			<a class="icon-cart" href="#" target="_blank">
+<!--       			<a class="icon-cart" href="#" target="_blank">
       			  <span id="quantaty-goods-mob">3</span>
       				<img class="img-fluid" src="imgs/connect/cart-white.svg" width="30" height="30" alt=""> 
-      			</a> 
+      			</a>  -->
       	</div>
       </nav>       
     </div>

@@ -133,7 +133,8 @@ a {
 .header .connects-icon-wrap {
 	position: absolute;
 	top: 3px;
-	left: 50%;
+	/*left: 50%;*/
+	right: 15px;
 }
 
 .header .registr-wrap {
@@ -329,7 +330,7 @@ a {
 
 .advantages-mob ul {
 	font-size: 20px;
-	list-style-image: url(imgs/advantages/bullit-green.png);
+	list-style-image: url(../imgs/advantages/bullit-green.png);
 	margin-left: 20px;
 }
 
@@ -357,6 +358,10 @@ a {
 	font-size: 14px;
 	padding-top: 10px;
 	padding-bottom: 5px;
+}
+
+.nowrap {
+	white-space: nowrap;
 }
 
 @media screen and (max-device-width: 991px) {

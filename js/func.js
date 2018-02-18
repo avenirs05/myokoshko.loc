@@ -56,7 +56,7 @@
 			var res = 0;
 			
 			$('table .item-net-row .sum-goods').each(function(indx, el) {
-				res = res + Number( $(el).text() );
+				res = res + unSeparateThousandsAndToNum( $(el).text() );				
 			});
 			
 			return res;
@@ -391,22 +391,6 @@
 	    }
 
 	    return num;
-	}
-
-
-	// Убирает группы разрядов, оставляет (возвращает) строку
-	function unSeparateThousands (str) {
-	    var res = '';
-	    
-	    for (var i = 0; i < str.length; i++) {
-	          if (str[i] === ' ') {
-	                continue;
-	          }
-	          
-	          res += str[i];
-	    }
-	    
-	    return res;
 	}
 
 

@@ -49,8 +49,8 @@ jQuery(document).ready(function () {
 	        '<i>высота сетки: </i>' + getNetHeight() + ' мм' +
 	      '</td>' + 
 	      '<td class="quantity-goods">' + getQuantityCalc() + '</td>' +
-	      '<td class="price-one-goods">' + calcPriceOneMoskit() + '</td>' +
-	      '<td class="sum-goods">' + calcPriceQuantityMoskit() + '</td>' +
+	      '<td class="price-one-goods">' + separateThousands( calcPriceOneMoskit() ) + '</td>' +
+	      '<td class="sum-goods">' + separateThousands( calcPriceQuantityMoskit() ) + '</td>' +
 	      '<td><img src="/imgs/close.png" width="10" alt=""></td>' +
 	    '</tr>'; 
 
@@ -77,7 +77,7 @@ jQuery(document).ready(function () {
 		$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
 
 		// Подставляем в итоговый ряд итоговую сумму товаров
-		$('table .final-row .final-sum b').text( separateThousands (calcFinalSum() ) + ' р.' );
+		$('table .final-row .final-sum b').text( (separateThousands(calcFinalSum() ) ) + ' руб.' );
 
 		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
 		$('#hidden-text').val( $('table').parent().html() );
@@ -94,7 +94,7 @@ jQuery(document).ready(function () {
 			}
 
 			$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
-			$('table .final-row .final-sum b').text( calcFinalSum() + 'р.' );
+			$('table .final-row .final-sum b').text( (separateThousands(calcFinalSum() ) ) + ' руб.' );
 
 	});
 

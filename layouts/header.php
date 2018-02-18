@@ -88,7 +88,7 @@
 						      <div class="dropdown-menu">
 						        <a class="dropdown-item" href="#">Откосы</a>
 						        <div class="dropdown-divider"></div>						        						        
-						        <a class="dropdown-item" href="moskit.php" target="_blank">Москитные сетки</a>
+						        <a class="dropdown-item" href="../moskit.php" target="_blank">Москитные сетки</a>
 						        <div class="dropdown-divider"></div>						        
 						        <a class="dropdown-item" href="#">Подоконники / Ремонтные накладки</a>
 						        <div class="dropdown-divider"></div>					        
@@ -135,7 +135,7 @@
 					    <div class="link">Каталог<i class="fa fa-chevron-down"></i></div>
 					    <ul class="submenu">
 					      <li><a href="#">Откосы</a></li>
-					      <li><a href="#">Москитные сетки</a></li>
+					      <li><a href="../moskit.php">Москитные сетки</a></li>
 					      <li><a href="#">Подоконники / Ремонтные накладки</a></li>
 					      <li><a href="#">Материалы для монтажа</a></li>
 					      <li><a href="#">Уплотнители</a></li>

@@ -109,3 +109,15 @@
 		}
 	}
 
+  var limits = {
+  	width: {
+  		min: 200,
+  		max: 2500
+  	},
+  	height: {
+  		min: 200,
+  		max: 2500
+  	}
+  } 
+
+

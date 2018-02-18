@@ -5,15 +5,35 @@ jQuery(document).ready(function () {
 		$('#menu-wrap').removeClass('sticky-top');
 	}
 
+	// Если в "креплении" выбран "плунжер", появляется вопрос про "фетр"
 	$('#fastening-content').on('change', function(){
 			if ( $('#fastening-content option:selected').val() == 'fastening-plunger-4' ) {
 							$('#fetr-wrap').parent().show();
 			} else $('#fetr-wrap').parent().hide();
 	});
 
-	// Расчет стоимости москитной сетки
+	// Если фокус на поле width или height - убирается предупреждение о недопустимых значениях
+	$('#width-net').on('focus', function() {
+		 $('#wrong-width-height').hide();
+	});
+	$('#height-net').on('focus', function() {
+		 $('#wrong-width-height').hide();
+	});
+
+
+	// Расчет стоимости москитной сетки ("Добавить к рассчету")
 	$('#btn-to-estim').on('click', function(e) {
 		e.preventDefault();
+
+		// Если длина (ширина) сетки не в нужных пределах
+		if ( getNetWidth() < limits.width.min || 
+			   getNetWidth() > limits.width.max ||
+			   getNetHeight() < limits.height.min ||
+			   getNetHeight() > limits.height.max ) {
+					$('#wrong-width-height').show();
+					return false;
+		}
+
 
 		var calculatedRow = 
 			'<tr class="item-net-row">' +
@@ -57,12 +77,11 @@ jQuery(document).ready(function () {
 		$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
 
 		// Подставляем в итоговый ряд итоговую сумму товаров
-		$('table .final-row .final-sum b').text( calcFinalSum() );
+		$('table .final-row .final-sum b').text( calcFinalSum() + 'р.' );
 
-		//console.log( calcFinalSum() );
-
-
-
+		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
+		$('#hidden-text').val( $('table').parent().html() );
+	
 	});
 
 
@@ -75,7 +94,7 @@ jQuery(document).ready(function () {
 			}
 
 			$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
-			$('table .final-row .final-sum b').text( calcFinalSum() );
+			$('table .final-row .final-sum b').text( calcFinalSum() + 'р.' );
 
 	});
 

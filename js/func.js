@@ -19,7 +19,6 @@
 												 getScrewsSum(); 
 		  
 		  return res;
-			res *= quantity;
 	}		
 
 
@@ -49,6 +48,7 @@
 			
 			return res;
 	}
+
 
 
 	// Возвращает итоговую сумму
@@ -81,6 +81,7 @@
 		}
 	}
 
+
 	// Возвращает текстовое значение в зависимости от вида полотна
 	function getLinenText () {
 		if ( $('#linen-content option').filter(':selected').val() == 'linen-standard' ) {
@@ -98,6 +99,7 @@
 					return text.linen.maxivision;
 		}
 	}
+
 
 	// Считает профиль рамки
 	function getProfileSum () {
@@ -189,6 +191,7 @@
 						return text.color.ral;
 			}
 	}
+	
 
 	// Ручка сумма
 	function getHandleSum () {

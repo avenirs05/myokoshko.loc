@@ -2,8 +2,7 @@
 
 <div class="rest-content-wrap about-company">
 	<h1 class="text-center">Калькулятор расчета стоимости москитной сетки</h1>
-	<form id="net-calc" method="post">
-		
+	<form id="net-calc" method="post" action="thanks.php">		
 		<div class="container-fluid">
 		  <div class="row">
 	      <div id="linen-wrap" class="col-lg form-group quest-section">
@@ -79,12 +78,12 @@
   	  </div>
   	  <div class="row">
 				<div id="width-wrap" class="col-lg-4 form-group quest-section">
-				  <label for="width-net">Ширина сетки (мм)</label>
-				  <input type="text" class="form-control" id="width-net" value="1">
+				  <label for="width-net">Ширина сетки, мм <span class="min-max-text">(от 200 до 2500)</span></label>
+				  <input type="number" class="form-control" id="width-net">
 				</div>
 				<div id="height-wrap" class="col-lg-4 form-group quest-section">
-				  <label for="height-net">Высота сетки (мм)</label>
-				  <input type="text" class="form-control" id="height-net" value="1">
+				  <label for="height-net">Высота сетки, мм <span class="min-max-text">(от 200 до 2500)</span></label>
+				  <input type="number" class="form-control" id="height-net">
 				</div>
 				<div id="quantity-wrap" class="col-lg-4 quest-section">
 					<div class="form-group">
@@ -94,8 +93,9 @@
 				</div>
   	  </div>
   	  <div class="row">
-	  	  <div class="col-lg-4">
+	  	  <div class="col-lg-12">
 	  	  	<button id="btn-to-estim" type="button" class="btn btn-primary">Добавить к рассчету</button>
+					<div id="wrong-width-height" style="display: none;" class="red">Введите правильное значение ширины (высоты) сетки (от 200 до 2500 мм).</div>
 	  	  </div>
   	  </div>
   	  <div class="row" style="display: none;">
@@ -115,25 +115,14 @@
 	  	  	</table>
 	  	  </div>
   	  </div>
-
+  	  <div class="row">
+	  	  <div class="col-lg-12">
+	  	  	<button id="btn-submit" type="submit" class="btn btn-primary">Отправить заявку</button>
+	  	  </div>
+  	  </div>
 		</div>
-
-
+		<input id="hidden-text" type="hidden" name="order">
 	</form>
 </div>
 
 <?php require_once 'layouts/footer.php'; ?>
-
-
-
-
-
-<!-- 	  		<p id="final-sum-wrap">
-	  			<b>Сумма:</b>&nbsp;
-	  			<span id="final-sum">0</span> руб.
-	  		</p> -->
-		
-
-
-
-

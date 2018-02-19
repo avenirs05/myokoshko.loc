@@ -127,6 +127,12 @@
   	  	  <input type="text" class="form-control" id="person-phone" name="person-phone" required>
   	  	</div>	  	  
   	  </div>
+  	  <div id="agreement-wrap" class="form-check" style="display: none;">
+  	    <label class="form-check-label">
+  	      <input type="checkbox" class="form-check-input" name="agree" checked disabled>
+  	       <a href="privacy.php" target="_blank">Согласен на обработку персональных данных</a> 
+  	    </label>
+  	  </div>
   	  <div class="row" style="display: none;">
 	  	  <div class="col-lg-12">
 	  	  	<button id="btn-submit" type="submit" class="btn btn-success">Отправить заявку</button>

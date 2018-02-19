@@ -41,6 +41,11 @@
 	margin-bottom: 15px;
 }
 
+#net-calc #agreement-wrap {
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+
 table td img:hover {
 	cursor: pointer;
 } 

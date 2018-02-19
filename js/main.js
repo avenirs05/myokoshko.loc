@@ -41,6 +41,7 @@ jQuery(document).ready(function () {
 		$('#person-name-wrap').parent().show();
 		$('#person-phone-wrap').parent().show();
 		$('#btn-submit').parent().parent().show();
+		$('#agreement-wrap').show();
 
 		var calculatedRow = 
 			'<tr class="item-net-row">' +

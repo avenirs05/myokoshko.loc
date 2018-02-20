@@ -17,7 +17,6 @@
   </head>
 
   <body> 
-		
 		<!-- Хедер десктоп -->
   	<div class="container-fluid header d-none d-lg-block">			
 			<nav class="row navbar navbar-light">
@@ -65,7 +64,7 @@
 			        <div class="phone-digits">+7 (495) 999-18-14</div>        
 			      </div>
 			      <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">          
-			        <div class="phone-digits">+7 (977) 270-22-34</div>        
+			        <div class="phone-digits">+7 925-143-92-99</div>        
 			      </div>
 			    </div>
 			  </div>

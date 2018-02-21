@@ -28,7 +28,7 @@ a {
  ===========================*/
 
 
-h1 {
+#header-mob h1 {
   color: #FFF;
   font-size: 24px;
   font-weight: 400;
@@ -36,7 +36,7 @@ h1 {
   margin-top: 80px;
 }
 
-h1 a {
+#header-mob h1 a {
   color: #c12c42;
   font-size: 16px;
 }

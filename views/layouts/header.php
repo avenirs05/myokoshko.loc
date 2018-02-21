@@ -79,15 +79,15 @@
             <div id="menu-content">             
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="/">Главная</a>
+                  <a class="nav-link" href="home">Главная</a>
                 </li>       
                 <div class="btn-group">
                   <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог         
                   </button>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="otkos/calc" target="_blank">Откосы</a>
+                    <a class="dropdown-item" href="/otkos/calc" target="_blank">Откосы</a>
                     <div class="dropdown-divider"></div>                                        
-                    <a class="dropdown-item" href="moskit/calc" target="_blank">Москитные сетки</a>
+                    <a class="dropdown-item" href="/moskit/calc" target="_blank">Москитные сетки</a>
                     <div class="dropdown-divider"></div>                    
                     <a class="dropdown-item" href="#" target="_blank">Подоконники / Ремонтные накладки</a>
                     <div class="dropdown-divider"></div>                  
@@ -106,13 +106,13 @@
                   </div>
                 </div>                
                 <li class="nav-item">
-                  <a class="nav-link" href="price.php" target="_blank">Доставка</a>
+                  <a class="nav-link" href="/delivery" target="_blank">Доставка</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="price.php" target="_blank">Оплата</a>
+                  <a class="nav-link" href="/payment" target="_blank">Оплата</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="price.php" target="_blank">Контакты</a>
+                  <a class="nav-link" href="/contacts" target="_blank">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -128,7 +128,7 @@
           <!-- Меню -->
           <ul id="accordion" class="accordion list-unstyled">
             <li>      
-              <div class="link"><a href="#">Главная</a></div>
+              <div class="link"><a href="/home">Главная</a></div>
             </li>
             <li>
               <div class="link">Каталог<i class="fa fa-chevron-down"></i></div>
@@ -145,13 +145,13 @@
               </ul>
             </li>
             <li>      
-              <div class="link"><a href="#">Доставка</a></div>
+              <div class="link"><a href="/delivery">Доставка</a></div>
             </li>
             <li>      
-              <div class="link"><a href="#">Оплата</a></div>
+              <div class="link"><a href="/payment">Оплата</a></div>
             </li>
             <li>      
-              <div id="last-child-menu-mob" class="link"><a href="#">Контакты</a></div>
+              <div id="last-child-menu-mob" class="link"><a href="/contacts">Контакты</a></div>
             </li>
           </ul>
         </div>

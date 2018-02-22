@@ -37,7 +37,7 @@
                 <img class="img-fluid instagram-icon" src="/template/imgs/connect/instagram.svg" width="27" height="27" alt="">
               </a>
               <a class="icon-link" href="#" target="_blank">
-                <img class="img-fluid facebook-icon" src="/template/imgs/connect/facebook.svg" width="29" height="29" alt=""> 
+                <img class="img-fluid facebook-icon" src="/template/imgs/connect/facebook.svg" width="29" height="29" alt="">
               </a>  
               <a class="icon-link" href="#" target="_blank">
                 <img src="/template/imgs/connect/odnokl.svg" width="25" height="25" alt=""> 
@@ -64,8 +64,8 @@
               <img class="phone-icon" src="/template/imgs/connect/phone.svg" width="17" height="17" alt="">
               <div class="phone-digits">+7 (495) 999-18-14</div>        
             </div>
-            <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">          
-              <div class="phone-digits">+7 925 143-92-99</div>        
+            <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">        
+              <div class="phone-digits">+7 (925) 143-92-99</div>        
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
             <div id="menu-content">             
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="home">Главная</a>
+                  <a class="nav-link" href="/home">Главная</a>
                 </li>       
                 <div class="btn-group">
                   <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог         
@@ -134,8 +134,8 @@
             <li>
               <div class="link">Каталог<i class="fa fa-chevron-down"></i></div>
               <ul class="submenu">
-                <li><a href="otkos/calc">Откосы</a></li>
-                <li><a href="moskit/calc">Москитные сетки</a></li>
+                <li><a href="/otkos/calc">Откосы</a></li>
+                <li><a href="/moskit/calc">Москитные сетки</a></li>
                 <li><a href="#">Подоконники / Ремонтные накладки</a></li>
                 <li><a href="#">Материалы для монтажа</a></li>
                 <li><a href="#">Уплотнители</a></li>

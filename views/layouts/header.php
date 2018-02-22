@@ -48,13 +48,14 @@
             </div>
             <div class="registr-wrap">
               <div class="registr-content">
-                <span>
-                  <img src="/template/imgs/lock.svg" width="12" height="12" alt="">   
-                  <a href="#" target="_blank">Вход</a>&nbsp;&nbsp;
-                </span>
-                <a href="#" target="_blank">Регистрация</a>
+                <?php if (isset($resOfReg) && $resOfReg || User::isGuest() == false ): ?>
+                  <?php require_once ROOT . '/views/layouts/acc_out.php'; ?>
+                  <?php else: ?>
+                    <?php require_once ROOT . '/views/layouts/ent_reg.php'; ?>               
+                <?php endif; ?>
               </div>    
             </div>
+
             <a class="icon-cart" href="#" target="_blank">
               <span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantaty-goods">3</span>
               <img class="img-fluid" src="/template/imgs/connect/cart.svg" width="25" height="25" alt=""> 
@@ -64,7 +65,7 @@
               <div class="phone-digits">+7 (495) 999-18-14</div>        
             </div>
             <div class="col-auto d-flex align-items-center justify-content-end contacts-city-phone ml-auto">          
-              <div class="phone-digits">+7 925-143-92-99</div>        
+              <div class="phone-digits">+7 925 143-92-99</div>        
             </div>
           </div>
         </div>

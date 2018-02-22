@@ -12,6 +12,13 @@ return array(
     'moskit/calc' => 'productMoskit/calc',
     'otkos/calc' => 'productOtkos/calc',
 
+    // Пользователь:
+    'user/register' => 'user/register',
+    'user/login' => 'user/login',
+    'user/logout' => 'user/logout',
+    'cabinet/edit' => 'cabinet/edit',
+    'cabinet' => 'cabinet/index',
+
     // По умолчанию
     '([\w]+)' => 'menu/home', 
     '' => 'menu/home' 

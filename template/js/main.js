@@ -105,6 +105,12 @@ jQuery(document).ready(function () {
 			$('table .final-row .final-sum b').text( (separateThousands(calcFinalSum() ) ) + ' руб.' );
 
 	});
+	
+
+	//Прижать футер к низу
+	if ($(document).height() <= $(window).height()) {
+	  $(".footer").addClass("fixed-bottom");
+	}
 
 
 });

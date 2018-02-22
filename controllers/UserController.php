@@ -10,11 +10,12 @@ class UserController
      */
     public function actionRegister()
     {
+
         // Переменные для формы
         $name = false;
         $email = false;
         $password = false;
-        $result = false;
+        $resOfReg = false;
 
         // Обработка формы
         if (isset($_POST['submit'])) {
@@ -44,9 +45,11 @@ class UserController
             if ($errors == false) {
                 // Если ошибок нет
                 // Регистрируем пользователя
-                $result = User::register($name, $email, $password);
+                $resOfReg = User::register($name, $email, $password);
+
             }
         }
+
 
         // Подключаем вид
         require_once(ROOT . '/views/user/register.php');
@@ -106,7 +109,7 @@ class UserController
     public function actionLogout()
     {
         // Стартуем сессию
-        session_start();
+        //session_start();
         
         // Удаляем информацию о пользователе из сессии
         unset($_SESSION["user"]);

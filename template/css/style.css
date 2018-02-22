@@ -34,10 +34,16 @@ a {
 
 .header .instagram-icon,
 .header .odnokl-icon,
-.header .whatsapp-icon,
-.header .viber-icon,
 .header .lelegram-icon {
 	margin-left: 2px;
+}
+
+.header .viber-icon {
+	margin-left: -1px;
+}
+
+.header .whatsapp-icon {
+	margin-left: 1px;
 }
 
 .header .phone-icon {
@@ -134,7 +140,6 @@ a {
 	position: absolute;
 	top: 3px;
 	left: 50%;
-	/*right: 15px;*/
 }
 
 .header .registr-wrap {
@@ -144,8 +149,8 @@ a {
 }
 
 .header .registr-wrap img {
-	margin-bottom: 3px;
-	margin-right: -2px;
+	margin-bottom: 5px;
+	margin-right: -1px;
 }
 
 #header-mob {

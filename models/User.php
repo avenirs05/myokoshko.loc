@@ -5,7 +5,6 @@
  */
 class User
 {
-
     /**
      * Регистрация пользователя 
      * @param string $name <p>Имя</p>
@@ -27,8 +26,10 @@ class User
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
+        
         return $result->execute();
     }
+
 
     /**
      * Редактирование данных пользователя

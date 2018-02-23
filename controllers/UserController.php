@@ -46,7 +46,6 @@ class UserController
                 // Если ошибок нет
                 // Регистрируем пользователя
                 $resOfReg = User::register($name, $email, $password);
-
             }
         }
 

@@ -32,6 +32,34 @@ class User
 
 
     /**
+     * Регистрация пользователя из соцсетей 
+     * @param string $identity <p>Идентификатор в соцсети</p>
+     * @param string $firstName <p>Имя в соцсети</p>
+     * @param string $lastName <p>Фамилия в соцсети</p>
+     * @param string $network <p>Название соцсети</p>
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    public static function registerSoc($identity, $firstName, $lastName, $network)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        d($db);
+        // Текст запроса к БД
+        $sql = 'INSERT INTO user_soc (identity, first_name, last_name, network) '
+                . 'VALUES (:identity, :first_name, :last_name, :network)';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':identity', $identity, PDO::PARAM_STR);
+        $result->bindParam(':first_name', $firstName, PDO::PARAM_STR);
+        $result->bindParam(':last_name', $lastName, PDO::PARAM_STR);
+        $result->bindParam(':network', $network, PDO::PARAM_STR);
+        
+        return $result->execute();
+    }
+
+
+    /**
      * Редактирование данных пользователя
      * @param integer $id <p>id пользователя</p>
      * @param string $name <p>Имя</p>
@@ -55,6 +83,7 @@ class User
         $result->bindParam(':password', $password, PDO::PARAM_STR);
         return $result->execute();
     }
+
 
     /**
      * Проверяем существует ли пользователь с заданными $email и $password
@@ -86,6 +115,37 @@ class User
         return false;
     }
 
+
+    /**
+     * Проверяем существует ли пользователь с заданными $identity
+     * @param string $email <p>Идентификатор соцсети</p>
+     * @return mixed : integer user id or false
+     */
+    public static function checkUserSocData($identity)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'SELECT * FROM user_soc WHERE identity = :identity';
+
+        // Получение результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':identity', $identity, PDO::PARAM_INT);
+        $result->execute();
+
+        // Обращаемся к записи
+        $user = $result->fetch();
+
+        if ($user) {
+            // Если запись существует, возвращаем identity пользователя
+            return $user['identity'];
+        }
+
+        return false;
+    }
+
+
     /**
      * Запоминаем пользователя
      * @param integer $userId <p>id пользователя</p>
@@ -95,6 +155,18 @@ class User
         // Записываем идентификатор пользователя в сессию
         $_SESSION['user'] = $userId;
     }
+
+
+    /**
+     * Запоминаем пользователя из соцметей
+     * @param string $userSocIdentity <p>id пользователя из соцсетей</p>
+     */
+    public static function authSoc($userSocIdentity)
+    {
+        // Записываем идентификатор пользователя в сессию
+        $_SESSION['userSoc'] = $userSocIdentity;
+    }
+
 
     /**
      * Возвращает идентификатор пользователя, если он авторизирован.<br/>
@@ -111,17 +183,35 @@ class User
         header("Location: /user/login");
     }
 
+
+    /**
+     * Возвращает идентификатор пользователя соцсетей, если он авторизирован.<br/>
+     * Иначе перенаправляет на страницу входа
+     * @return string <p>Идентификатор пользователя соцсетей</p>
+     */
+    public static function checkSocLogged()
+    {
+        // Если сессия есть, вернем идентификатор пользователя
+        if (isset($_SESSION['userSoc'])) {
+            return $_SESSION['userSoc'];
+        }
+
+        //header("Location: /user/login");
+    }
+
+
     /**
      * Проверяет является ли пользователь гостем
      * @return boolean <p>Результат выполнения метода</p>
      */
     public static function isGuest()
     {
-        if (isset($_SESSION['user'])) {
+        if (isset($_SESSION['user']) ) {
             return false;
         }
         return true;
     }
+
 
     /**
      * Проверяет имя: не меньше, чем 2 символа

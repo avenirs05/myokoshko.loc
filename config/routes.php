@@ -14,6 +14,7 @@ return array(
 
     // Пользователь:
     'user/register' => 'user/register',
+    'user/loginsoc' => 'user/loginsoc',
     'user/login' => 'user/login',
     'user/logout' => 'user/logout',
     'cabinet/edit' => 'cabinet/edit',

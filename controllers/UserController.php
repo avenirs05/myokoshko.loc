@@ -102,16 +102,27 @@ class UserController
         return true;
     }
 
+
+    /**
+     * Action для страницы "Вход на сайт через соцсети"
+     */
+    public function actionLoginsoc()
+    {     
+        // Подключаем вид
+        require_once(ROOT . '/views/user/loginsoc.php');
+        return true;
+    }
+
+
     /**
      * Удаляем данные о пользователе из сессии
      */
     public function actionLogout()
     {
-        // Стартуем сессию
-        //session_start();
         
         // Удаляем информацию о пользователе из сессии
         unset($_SESSION["user"]);
+        unset($_SESSION["userSoc"]);
         
         // Перенаправляем пользователя на главную страницу
         header("Location: /");

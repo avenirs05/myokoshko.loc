@@ -17,7 +17,7 @@
   			$resOfRegSoc = User::registerSoc($identity, $firstName, $lastName, $network);
   } else {
   		User::authSoc($userSocIdentity);
-  		header("Location: /cabinet");
+  		header("Location: /cabinet/soc");
   }
 
 

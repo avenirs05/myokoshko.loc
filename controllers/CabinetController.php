@@ -6,13 +6,11 @@
  */
 class CabinetController
 {
-
     /**
      * Action для страницы "Кабинет пользователя"
      */
     public function actionIndex()
     {     
-     
         // Получаем идентификатор пользователя из сессии
         $userId = User::checkLogged();
 
@@ -21,8 +19,28 @@ class CabinetController
 
         // Подключаем вид
         require_once(ROOT . '/views/cabinet/index.php');
+        return true;       
+    }
+
+
+
+    /**
+     * Action для страницы "Кабинет пользователя" - если с соцсетей
+     */
+    public function actionSoc()
+    {  
+        // Получаем идентификатор пользователя из сессии
+        $userSocId = User::checkSocLogged();
+
+        // Получаем информацию о пользователе из БД
+        $user = User::getUserBySocId($userSocId);
+
+        // Подключаем вид
+        require_once(ROOT . '/views/cabinet/index_soc.php');
         return true;
     }
+
+
 
     /**
      * Action для страницы "Редактирование данных пользователя"

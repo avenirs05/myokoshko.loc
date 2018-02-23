@@ -196,7 +196,7 @@ class User
             return $_SESSION['userSoc'];
         }
 
-        //header("Location: /user/login");
+        header("Location: /");
     }
 
 
@@ -304,6 +304,31 @@ class User
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
+
+        // Указываем, что хотим получить данные в виде массива
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $result->execute();
+
+        return $result->fetch();
+    }
+
+
+    /**
+     * Возвращает пользователя с указанным identity из соцсетей
+     * @param string $identity <p>id пользователя</p>
+     * @return array <p>Массив с информацией о пользователе</p>
+     */
+    public static function getUserBySocId($identity)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Текст запроса к БД
+        $sql = 'SELECT * FROM user_soc WHERE identity = :identity';
+
+        // Получение и возврат результатов. Используется подготовленный запрос
+        $result = $db->prepare($sql);
+        $result->bindParam(':identity', $identity, PDO::PARAM_STR);
 
         // Указываем, что хотим получить данные в виде массива
         $result->setFetchMode(PDO::FETCH_ASSOC);

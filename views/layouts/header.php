@@ -47,9 +47,7 @@
               <img class="telegram-icon" src="/template/imgs/connect/telegram.png" width="25" height="25" alt="">    
             </div>
             <div class="registr-wrap">
-              <div class="registr-content">
-                <script src="//ulogin.ru/js/ulogin.js"></script>
-                <a href="#" id="uLogin" data-ulogin="display=window;theme=classic;fields=first_name,last_name;providers=;hidden=;redirect_uri=http%3A%2F%2Fcopy2.mybudva.com%2Fuser%2Floginsoc;mobilebuttons=0;"><img src="http://ulogin.ru/img/button.png?version=img.2.0.0" width=187 height=30 alt="МультиВход"/></a>
+              <div class="registr-content">                
                 <?php if (isset($resOfReg) && $resOfReg || User::isGuest() == false ): ?>
                   <?php require_once ROOT . '/views/layouts/acc_out.php'; ?>
                   <?php else: ?>

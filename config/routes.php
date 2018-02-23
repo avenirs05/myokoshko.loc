@@ -18,6 +18,7 @@ return array(
     'user/login' => 'user/login',
     'user/logout' => 'user/logout',
     'cabinet/edit' => 'cabinet/edit',
+    'cabinet/soc' => 'cabinet/soc',
     'cabinet' => 'cabinet/index',
 
     // По умолчанию

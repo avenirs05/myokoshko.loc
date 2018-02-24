@@ -18,7 +18,7 @@
 
   <body> 
     <?php var_dump(User::isGuest()); ?>
-    <?php d($_SESSION);?>
+    <?php d($_SESSION);;?>
     <?php var_dump(isset($_SESSION['userSoc']));?>
     <!-- Хедер десктоп -->
     <div class="container-fluid header d-none d-lg-block">      

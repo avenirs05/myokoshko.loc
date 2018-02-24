@@ -17,6 +17,9 @@
   </head>
 
   <body> 
+    <?php var_dump(User::isGuest()); ?>
+    <?php d($_SESSION);?>
+    <?php var_dump(isset($_SESSION['userSoc']));?>
     <!-- Хедер десктоп -->
     <div class="container-fluid header d-none d-lg-block">      
       <nav class="row navbar navbar-light">
@@ -48,7 +51,7 @@
             </div>
             <div class="registr-wrap">
               <div class="registr-content">                
-                <?php if (isset($resOfReg) && $resOfReg || User::isGuest() == false ): ?>
+                <?php if ( (isset($resOfReg) && $resOfReg) || (User::isGuest() == false) ): ?>
                   <?php require_once ROOT . '/views/layouts/acc_out.php'; ?>
                   <?php else: ?>
                     <?php require_once ROOT . '/views/layouts/ent_reg.php'; ?>               

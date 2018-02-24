@@ -1,6 +1,5 @@
 <script src="//ulogin.ru/js/ulogin.js"></script>
 
-
 <?php require_once ROOT . '/views/layouts/header.php'; ?>
 
 <div class="rest-content-wrap">

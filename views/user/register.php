@@ -1,18 +1,23 @@
-  <?php if ($resOfReg): ?>    
-    <?php require_once ROOT . '/views/layouts/header.php'; ?>
-    <div class="rest-content-wrap">
-      <h1 class="text-center">Регистрация на сайте</h1>
-    <p>Регистрация прошла успешно! <a href="/cabinet/">Войти в кабинет</a></p>    
-  <?php else: ?>
-    <?php require_once ROOT . '/views/layouts/header.php'; ?>
-    <div class="rest-content-wrap">
-      <h1>Регистрация на сайте</h1>
-    <?php if (isset($errors) && is_array($errors)): ?>     
-      <?php foreach ($errors as $error): ?>
-        <p class="red"><?php echo $error; ?></p>
-      <?php endforeach; ?>      
-    <?php endif; ?>
-  
+<?php include ROOT . '/views/layouts/header.php'; ?>
+
+<div class="rest-content-wrap for-landscape">
+  <div class="container-fluid">
+
+    <?php if ($resOfReg): ?>    
+      <?php require_once ROOT . '/views/layouts/header.php'; ?>
+        <h1 class="text-center">Регистрация на сайте</h1>
+      <p>Регистрация прошла успешно! <a href="/cabinet/">Войти в кабинет</a></p>    
+    <?php else: ?>
+      <?php require_once ROOT . '/views/layouts/header.php'; ?>
+        <h1>Регистрация на сайте</h1>
+      <?php if (isset($errors) && is_array($errors)): ?>     
+        <?php foreach ($errors as $error): ?>
+          <p class="red"><?php echo $error; ?></p>
+        <?php endforeach; ?>      
+      <?php endif; ?>
+
+    
+
     <form method="post" action="/user/register">      
       <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
         <div class="row">
@@ -40,9 +45,11 @@
         </div>
       </div>
     </form>
+    <?php endif; ?>
+   
   </div>
-  <?php endif; ?>
-  
+</div>
 
-<?php require_once ROOT . '/views/layouts/footer.php'; ?>
 
+
+<?php include ROOT . '/views/layouts/footer.php'; ?>

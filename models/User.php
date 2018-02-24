@@ -154,6 +154,9 @@ class User
     {
         // Записываем идентификатор пользователя в сессию
         $_SESSION['user'] = $userId;
+   
+        // Удаляем юзера с соцсетей
+        unset($_SESSION['userSoc']);
     }
 
 
@@ -165,6 +168,9 @@ class User
     {
         // Записываем идентификатор пользователя в сессию
         $_SESSION['userSoc'] = $userSocIdentity;
+
+        // Удаляем юзера с не с соцсетей
+        unset($_SESSION['user']);
     }
 
 
@@ -322,7 +328,7 @@ class User
      * @param string $identity <p>id пользователя</p>
      * @return array <p>Массив с информацией о пользователе</p>
      */
-    public static function getUserBySocId($identity)
+    public static function getUserSocById($identity)
     {
         // Соединение с БД
         $db = Db::getConnection();

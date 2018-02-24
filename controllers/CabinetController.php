@@ -33,7 +33,7 @@ class CabinetController
         $userSocId = User::checkSocLogged();
 
         // Получаем информацию о пользователе из БД
-        $user = User::getUserBySocId($userSocId);
+        $user = User::getUserSocById($userSocId);
 
         // Подключаем вид
         require_once(ROOT . '/views/cabinet/index_soc.php');

@@ -3,7 +3,7 @@
 
 <?php require_once ROOT . '/views/layouts/header.php'; ?>
 
-<div class="rest-content-wrap about-company">
+<div class="rest-content-wrap">
 	<h1 class="text-center">Калькулятор расчета стоимости москитной сетки</h1>
 	<form id="net-calc" method="post" action="thanks.php">		
 		<div class="container-fluid">

@@ -52,9 +52,9 @@
             <div class="registr-wrap">
               <div class="registr-content">                
                 <?php if ( (isset($resOfReg) && $resOfReg) || (User::isGuest() == false) ): ?>
-                  <?php require_once ROOT . '/views/layouts/acc_out.php'; ?>
+                  <?php require ROOT . '/views/layouts/acc_out.php'; ?>
                   <?php else: ?>
-                    <?php require_once ROOT . '/views/layouts/ent_reg.php'; ?>               
+                    <?php require ROOT . '/views/layouts/ent_reg.php'; ?>               
                 <?php endif; ?>
               </div>    
             </div>
@@ -154,10 +154,19 @@
             <li>      
               <div class="link"><a href="/payment">Оплата</a></div>
             </li>
-            <li>      
+            <li style="margin-bottom: 20px;">      
               <div id="last-child-menu-mob" class="link"><a href="/contacts">Контакты</a></div>
             </li>
           </ul>
+          <div class="registr-wrap" style="margin-bottom: -20px;">
+            <div class="registr-content text-right">                
+              <?php if ( (isset($resOfReg) && $resOfReg) || (User::isGuest() == false) ): ?>
+                <?php require ROOT . '/views/layouts/acc_out-mob.php'; ?>
+                <?php else: ?>
+                  <?php require ROOT . '/views/layouts/ent_reg-mob.php'; ?>               
+              <?php endif; ?>
+            </div>    
+          </div>
         </div>
       </div>
       <nav class="navbar navbar-dark bg-dark no-gutters">
@@ -169,8 +178,9 @@
             <a class="icon-cart" href="#" target="_blank">
               <span id="quantaty-goods-mob">3</span>
               <img class="img-fluid" src="/template/imgs/connect/cart-white.svg" width="30" height="30" alt=""> 
-            </a> 
-        </div>
-      </nav>       
+            </a>
+        </div>       
+      </nav>  
+
     </div>
 

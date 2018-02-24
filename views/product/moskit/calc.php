@@ -82,11 +82,11 @@
             <div class="row">
                 <div id="width-wrap" class="col-lg-4 form-group quest-section">
                     <label for="width-net">Ширина сетки, мм <span class="min-max-text">(от 200 до 2500)</span></label>
-                    <input type="number" class="form-control" id="width-net">
+                    <input type="number" class="form-control" id="width-net" value="1000">
                 </div>
                 <div id="height-wrap" class="col-lg-4 form-group quest-section">
                     <label for="height-net">Высота сетки, мм <span class="min-max-text">(от 200 до 2500)</span></label>
-                    <input type="number" class="form-control" id="height-net">
+                    <input type="number" class="form-control" id="height-net" value="1000">
                 </div>
                 <div id="quantity-wrap" class="col-lg-4 quest-section">
                     <div class="form-group">
@@ -138,7 +138,8 @@
             </div>
             <div class="row" style="display: none;">
                 <div class="col-lg-12">
-                    <button id="btn-submit" type="submit" class="btn btn-success">Отправить заявку</button>
+                    <button id="btn-add-cart-mosk" type="button" class="btn btn-outline-primary btn-add-cart"><i class="fa fa-shopping-cart"></i> В корзину</button>
+                    <button id="btn-submit" type="submit" class="btn btn-success">Оформить заказ</button>
                 </div>	  	  
             </div>
         </div>

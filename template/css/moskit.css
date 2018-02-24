@@ -37,8 +37,13 @@
 	color: #005BA6;
 }
 
-#net-calc #btn-submit {
+#net-calc #btn-submit,
+#net-calc #btn-add-cart-mosk {
 	margin-bottom: 70px;
+}
+
+#net-calc #btn-add-cart-mosk {
+	margin-right: 10px;
 }
 
 #net-calc #agreement-wrap {

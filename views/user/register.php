@@ -14,9 +14,7 @@
         <?php foreach ($errors as $error): ?>
           <p class="red"><?php echo $error; ?></p>
         <?php endforeach; ?>      
-      <?php endif; ?>
-
-    
+      <?php endif; ?>    
 
     <form method="post" action="/user/register">      
       <div class="container-fluid" style="padding-left: 0; padding-right: 0;">

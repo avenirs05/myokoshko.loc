@@ -17,10 +17,6 @@
   </head>
 
   <body> 
-<!--     <?php var_dump(User::isGuest()); ?>
-    <?php d($_SESSION);;;?>
-    <?php var_dump(isset($_SESSION['userSoc']));?> -->
-    <!-- Хедер десктоп -->
     <div class="container-fluid header d-none d-lg-block">      
       <nav class="row navbar navbar-light">
         <div id="header-content" class="ml-auto mr-auto">
@@ -59,7 +55,7 @@
               </div>    
             </div>
 
-            <a class="icon-cart" href="#" target="_blank">
+            <a class="icon-cart" href="/cart" target="_blank">
               <span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantaty-goods">3</span>
               <img class="img-fluid" src="/template/imgs/connect/cart.svg" width="25" height="25" alt=""> 
             </a> 

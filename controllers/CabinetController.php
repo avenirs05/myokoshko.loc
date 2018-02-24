@@ -11,6 +11,11 @@ class CabinetController
      */
     public function actionIndex()
     {     
+        // Если юзер с соцсети - отправляем в контроллер для соцсетей
+        if (isset($_SESSION['userSoc'])) {
+                    header("Location: /cabinet/soc");
+        }
+
         // Получаем идентификатор пользователя из сессии
         $userId = User::checkLogged();
 

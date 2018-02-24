@@ -21,6 +21,9 @@ return array(
     'cabinet/soc' => 'cabinet/soc',
     'cabinet' => 'cabinet/index',
 
+    //Страница "спасибо за заявку"
+    'thanks' => 'thanks/index',
+    
     // По умолчанию
     '([\w]+)' => 'menu/home', 
     '' => 'menu/home' 

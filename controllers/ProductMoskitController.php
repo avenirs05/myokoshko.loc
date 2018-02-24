@@ -6,7 +6,6 @@
  */
 class ProductMoskitController
 {
-
     /**
      * Action для страницы калькулятора москитной сетки
      * 

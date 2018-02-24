@@ -21,7 +21,7 @@ class UserController
         if (isset($_POST['submit'])) {
             // Если форма отправлена 
             // Получаем данные из формы
-            $name = $_POST['name'];
+            $name = $_POST['first_name'];
             $email = $_POST['email'];
             $password = $_POST['password'];
 
@@ -46,6 +46,9 @@ class UserController
                 // Если ошибок нет
                 // Регистрируем пользователя
                 $resOfReg = User::register($name, $email, $password);
+                
+                $userId = User::checkUserData($email, $password);
+                User::auth($userId);
             }
         }
 

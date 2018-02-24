@@ -35,7 +35,7 @@ class AdminCategoryController extends AdminBase
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Получаем данные из формы
-            $name = $_POST['name'];
+            $name = $_POST['first_name'];
             $sortOrder = $_POST['sort_order'];
             $status = $_POST['status'];
 
@@ -77,7 +77,7 @@ class AdminCategoryController extends AdminBase
         if (isset($_POST['submit'])) {
             // Если форма отправлена   
             // Получаем данные из формы
-            $name = $_POST['name'];
+            $name = $_POST['first_name'];
             $sortOrder = $_POST['sort_order'];
             $status = $_POST['status'];
 

@@ -15,7 +15,7 @@ class CabinetController
         if (isset($_SESSION['userSoc'])) {
                     header("Location: /cabinet/soc");
         }
-
+        
         // Получаем идентификатор пользователя из сессии
         $userId = User::checkLogged();
 
@@ -41,7 +41,7 @@ class CabinetController
         $user = User::getUserSocById($userSocId);
 
         // Подключаем вид
-        require_once(ROOT . '/views/cabinet/index_soc.php');
+        require_once(ROOT . '/views/cabinet/index.php');
         return true;
     }
 
@@ -59,7 +59,7 @@ class CabinetController
         $user = User::getUserById($userId);
 
         // Заполняем переменные для полей формы
-        $name = $user['name'];
+        $name = $user['first_name'];
         $password = $user['password'];
 
         // Флаг результата
@@ -69,7 +69,7 @@ class CabinetController
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Получаем данные из формы редактирования
-            $name = $_POST['name'];
+            $name = $_POST['first_name'];
             $password = $_POST['password'];
 
             // Флаг ошибок

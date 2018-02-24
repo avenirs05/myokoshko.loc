@@ -2,7 +2,7 @@
     <?php require_once ROOT . '/views/layouts/header.php'; ?>
     <div class="rest-content-wrap">
       <h1 class="text-center">Регистрация на сайте</h1>
-    <p>Регистрация прошла успешно! <a href="/user/login/">Войти на сайт</a></p>    
+    <p>Регистрация прошла успешно! <a href="/cabinet/">Войти в кабинет</a></p>    
   <?php else: ?>
     <?php require_once ROOT . '/views/layouts/header.php'; ?>
     <div class="rest-content-wrap">
@@ -18,7 +18,7 @@
         <div class="row">
           <div id="person-name-wrap" class="col-lg-4 form-group quest-section">
             <label>Имя<span class="red">*</span></label>
-            <input type="text" class="form-control" name="name" value="<?php echo $name; ?>" required>
+            <input type="text" class="form-control" name="first_name" value="<?php echo $name; ?>" required>
           </div>        
         </div>
         <div class="row">

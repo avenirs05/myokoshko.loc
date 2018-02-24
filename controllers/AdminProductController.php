@@ -38,7 +38,7 @@ class AdminProductController extends AdminBase
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Получаем данные из формы
-            $options['name'] = $_POST['name'];
+            $options['name'] = $_POST['first_name'];
             $options['code'] = $_POST['code'];
             $options['price'] = $_POST['price'];
             $options['category_id'] = $_POST['category_id'];
@@ -99,7 +99,7 @@ class AdminProductController extends AdminBase
         if (isset($_POST['submit'])) {
             // Если форма отправлена
             // Получаем данные из формы редактирования. При необходимости можно валидировать значения
-            $options['name'] = $_POST['name'];
+            $options['name'] = $_POST['first_name'];
             $options['code'] = $_POST['code'];
             $options['price'] = $_POST['price'];
             $options['category_id'] = $_POST['category_id'];

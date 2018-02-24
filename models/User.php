@@ -18,12 +18,12 @@ class User
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $sql = 'INSERT INTO user (name, email, password) '
-                . 'VALUES (:name, :email, :password)';
+        $sql = 'INSERT INTO user (first_name, email, password) '
+                . 'VALUES (:first_name, :email, :password)';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
-        $result->bindParam(':name', $name, PDO::PARAM_STR);
+        $result->bindParam(':first_name', $name, PDO::PARAM_STR);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
         
@@ -73,13 +73,13 @@ class User
 
         // Текст запроса к БД
         $sql = "UPDATE user 
-            SET name = :name, password = :password 
+            SET first_name = :first_name, password = :password 
             WHERE id = :id";
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
         $result->bindParam(':id', $id, PDO::PARAM_INT);
-        $result->bindParam(':name', $name, PDO::PARAM_STR);
+        $result->bindParam(':first_name', $name, PDO::PARAM_STR);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
         return $result->execute();
     }

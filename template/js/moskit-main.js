@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
 
 
 	// Расчет стоимости москитной сетки ("Добавить к рассчету")
-	$('#btn-to-estim').on('click', function(e) {
+	$(document).on('click', '#btn-to-estim', function(e) {
 		e.preventDefault();
 
 		// Если длина (ширина) сетки не в нужных пределах
@@ -40,18 +40,19 @@ jQuery(document).ready(function () {
 		$('#btn-submit').parent().parent().show();
 		$('#agreement-wrap').show();
 
-		var calculatedRow = 
+		var calculatedRow = 			
 			'<tr class="item-net-row">' +
+				'<input type="hidden" value='+ random() + '>' +
 	      '<td class="text-goods">Москитная сетка: ' + 
-	      	'<i>вид: </i>' + getLinenText() + ', ' + 
-	        '<i>профиль рамки: </i>' + getProfileText() + ', ' +
-	        '<i>цвет рамки: </i>' + getColorText() + ', ' +
-	        '<i>ручка: </i>' + getHandleText() + ', ' +
-	        '<i>крепление: </i>' + getFasteningText() + ', ' +
-	        '<i>фетр: </i>' + getFetrText() + ', ' +
-	        '<i>саморезы: </i>' + getScrewsText() + ', ' +
-	        '<i>ширина сетки: </i>' + getNetWidth() + ' мм, ' +
-	        '<i>высота сетки: </i>' + getNetHeight() + ' мм' +
+	      	'вид: ' + getLinenText() + ', ' + 
+	        'профиль рамки: ' + getProfileText() + ', ' +
+	        'цвет рамки: ' + getColorText() + ', ' +
+	        'ручка: ' + getHandleText() + ', ' +
+	        'крепление: ' + getFasteningText() + ', ' +
+	        'фетр: ' + getFetrText() + ', ' +
+	        'саморезы: ' + getScrewsText() + ', ' +
+	        'ширина сетки: ' + getNetWidth() + ' мм, ' +
+	        'высота сетки: ' + getNetHeight() + ' мм' +
 	      '</td>' + 
 	      '<td class="quantity-goods">' + getQuantityCalc() + '</td>' +
 	      '<td class="price-one-goods">' + separateThousands( calcPriceOneMoskit() ) + '</td>' +
@@ -86,6 +87,28 @@ jQuery(document).ready(function () {
 
 		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
 		$('#hidden-text').val( $('table').parent().html() );
+
+		var id = $('table .item-net-row input').val();
+		var cntLastRow = $('table .item-net-row').length - 1;
+		var quantity = $('#quantity').val();
+		var product = $('table .item-net-row .text-goods').eq(cntLastRow).text();
+		var price = $('table .item-net-row .price-one-goods').eq(cntLastRow).text();
+		var sum = $('table .item-net-row .sum-goods').eq(cntLastRow).text();
+		
+		$.ajax({
+		  url: '/cart/add',
+		  data: 'id=' + id + 
+		  			'&product=' + product + 
+		  			'&quantity=' + quantity + 
+		  			'&price=' + price + 
+		  			'&sum=' + sum,
+		  type: 'post',
+		  success: function(data) {
+		  	$('#quantity-goods').text(data);
+		  	$('#quantity-goods-mob').text(data);
+		    //alert(typeof data);
+		  }
+		});
 	
 	});
 

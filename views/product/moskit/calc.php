@@ -59,7 +59,7 @@
                         <option value="fastening-baran-4">Барашек (4 шт)</option>
                         <option value="fastening-metal-inside">Металл (внутреннее)</option>		
                         <option value="fastening-vertex-9-mm">VERTEX (наплав 9 мм)</option>		
-                        <option value="fastening-vertex-13-mm">VERTEX (наплав 13 мм)</option>								    
+                        <option value="fastening-vertex-13-mm">VERTEX (наплав 13 мм)</option>						    
                     </select>
                 </div>
                 <div id="screws-wrap" class="col-lg form-group quest-section">
@@ -105,7 +105,7 @@
                 <div class="col-lg">
                     <table class="table table-bordered">
                         <thead>
-                            <tr>	  	  	      
+                            <tr>
                                 <th scope="col">Товар</th>
                                 <th scope="col">Количество</th>
                                 <th scope="col">Цена</th>
@@ -113,8 +113,7 @@
                                 <th scope="col"></th>
                             </tr>
                         </thead>
-                        <tbody>
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </div>

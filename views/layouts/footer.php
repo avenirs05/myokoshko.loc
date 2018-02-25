@@ -22,6 +22,7 @@
 
 <!-- My Own Js-scripts -->
 <script src="/template/js/moskit-data.js"></script>
+<script src="/template/js/func.js"></script>
 <script src="/template/js/moskit-func.js"></script>       
 <script src="/template/js/moskit-main.js"></script>
 <script src="/template/js/main.js"></script>

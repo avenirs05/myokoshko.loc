@@ -56,7 +56,7 @@
             </div>
 
             <a class="icon-cart" href="/cart" target="_blank">
-              <span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantaty-goods">3</span>
+              <span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantity-goods">0</span>
               <img class="img-fluid" src="/template/imgs/connect/cart.svg" width="25" height="25" alt=""> 
             </a> 
             <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">          
@@ -172,7 +172,7 @@
         <div class="col d-flex align-items-center justify-content-end">     
             <span class="phone-digits">+7 (495) 999-18-14</span>
             <a class="icon-cart" href="#" target="_blank">
-              <span id="quantaty-goods-mob">3</span>
+              <span id="quantity-goods-mob">0</span>
               <img class="img-fluid" src="/template/imgs/connect/cart-white.svg" width="30" height="30" alt=""> 
             </a>
         </div>       

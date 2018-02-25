@@ -83,7 +83,7 @@ a {
 	right: 15px;
 }
 
-.header .icon-cart #quantaty-goods {
+.header .icon-cart #quantity-goods {
 	font-size: 22px;
 	font-weight: 700;
 	color: #E7501E;
@@ -196,7 +196,7 @@ a {
 	list-style-type: none;
 }
 
-#header-mob #quantaty-goods-mob {
+#header-mob #quantity-goods-mob {
 	position: absolute;
 	top: 5px;
 	color: #E7501E;

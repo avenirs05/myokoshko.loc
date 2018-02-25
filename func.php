@@ -2,9 +2,10 @@
 
 
 /**
- * Формирует header 
+ * Инициализирует массив $_SESSION 
  */
-function getHeader ($regStatus) {
-    
-}
+// function sessInit () {
+//     $_SESSION['cart']['final_quantity'] = 0;
+//     $_SESSION['cart']['products'] = '';
+// }
 

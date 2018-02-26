@@ -5,7 +5,7 @@
 
 <div class="rest-content-wrap">
     <h1 class="text-center">Калькулятор расчета стоимости откосов</h1>
-    <form id="net-calc" method="post" action="/thanks">		
+    <form id="net-calc" method="post" action="/cart">       
         <div class="container-fluid">
             <div class="row">
                 <div id="linen-wrap" class="col-lg form-group quest-section">
@@ -22,21 +22,21 @@
                     <select name="profile" class="form-control" id="profile-content">
                         <option value="profile-standard">Стандарт</option>
                         <option value="profile-powerfull">Усиленный (без импоста)</option>
-                        <option value="profile-vertex">VERTEX</option>						    
+                        <option value="profile-vertex">VERTEX</option>                          
                     </select>
-                </div>		    
+                </div>          
                 <div id="color-wrap" class="col-lg form-group quest-section">
                     <label>Цвет рамки (профиля)</label>
                     <select name="color" class="form-control" id="color-content">
                         <option value="color-white-not-vertex">Белый</option>
                         <option value="color-brown-not-vertex">Коричневый</option>
-                        <option value="color-white-vertex">Белый (VERTEX)</option>		
+                        <option value="color-white-vertex">Белый (VERTEX)</option>      
                         <option value="color-brown-vertex">Коричневый (VERTEX)</option>
-                        <option value="color-grey-vertex">Серый (VERTEX)</option>						    
-                        <option value="color-gold-oak-vertex">Золотой дуб (VERTEX)</option>			
+                        <option value="color-grey-vertex">Серый (VERTEX)</option>                           
+                        <option value="color-gold-oak-vertex">Золотой дуб (VERTEX)</option>         
                         <option value="color-mahogany-vertex">Махагон (VERTEX)</option>
                         <option value="color-stained-oak-vertex">Мореный дуб (VERTEX)</option>
-                        <option value="color-ral">RAL (аэрозольная краска)</option>							    
+                        <option value="color-ral">RAL (аэрозольная краска)</option>                             
                     </select>
                 </div>
             </div>
@@ -45,28 +45,28 @@
                     <label>Ручка</label>
                     <select name="handle" class="form-control" id="handle-content">
                         <option value="handle-pvh-simple">ПВХ</option>
-                        <option value="handle-pvh-transparent">ПВХ прозрачная</option>						    
-                        <option value="handle-pvh-brown">ПВХ коричневая</option>		
-                        <option value="handle-metal">Металл</option>							    
+                        <option value="handle-pvh-transparent">ПВХ прозрачная</option>                          
+                        <option value="handle-pvh-brown">ПВХ коричневая</option>        
+                        <option value="handle-metal">Металл</option>                                
                     </select>
                 </div>
                 <div id="fastening-wrap" class="col-lg form-group quest-section">
                     <label>Крепление</label>
                     <select name="fastening" class="form-control" id="fastening-content">
                         <option value="fastening-pvh-2-pairs">ПВХ (2 пары)</option>
-                        <option value="fastening-metal-2-pairs">Металл (2 пары)</option>						    
-                        <option value="fastening-plunger-4">Плунжер (4 шт)</option>		
+                        <option value="fastening-metal-2-pairs">Металл (2 пары)</option>                        
+                        <option value="fastening-plunger-4">Плунжер (4 шт)</option>     
                         <option value="fastening-baran-4">Барашек (4 шт)</option>
-                        <option value="fastening-metal-inside">Металл (внутреннее)</option>		
-                        <option value="fastening-vertex-9-mm">VERTEX (наплав 9 мм)</option>		
-                        <option value="fastening-vertex-13-mm">VERTEX (наплав 13 мм)</option>						    
+                        <option value="fastening-metal-inside">Металл (внутреннее)</option>     
+                        <option value="fastening-vertex-9-mm">VERTEX (наплав 9 мм)</option>     
+                        <option value="fastening-vertex-13-mm">VERTEX (наплав 13 мм)</option>           
                     </select>
                 </div>
                 <div id="screws-wrap" class="col-lg form-group quest-section">
                     <label>Саморезы</label>
                     <select name="screws" class="form-control" id="screws-content">
                         <option value="screws-yes">Нужны</option>
-                        <option value="screws-no">Не нужны</option>			    
+                        <option value="screws-no">Не нужны</option>             
                     </select>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     <label>Фетр</label>
                     <select name="fetr" class="form-control" id="fetr-content">
                         <option value="fetr-no">Не нужен</option>
-                        <option value="fetr-yes">Нужен</option>  	  	    			    
+                        <option value="fetr-yes">Нужен</option>                             
                     </select>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                     <div class="form-group">
                         <label for="quantity">Количество (штук)</label>
                         <input type="number" class="form-control" id="quantity" name="quantity" value="1">
-                    </div>			
+                    </div>          
                 </div>
             </div>
             <div class="row" style="margin-top: -15px;">
@@ -118,28 +118,9 @@
                 </div>
             </div>
             <div class="row" style="display: none;">
-                <div id="person-name-wrap" class="col-lg-4 form-group quest-section">
-                    <label for="person-name">Имя<span class="red">*</span></label>
-                    <input type="text" class="form-control" id="person-name" name="person-name" required>
-                </div>	  	  
-            </div>
-            <div class="row" style="display: none;">
-                <div id="person-phone-wrap" class="col-lg-4 form-group quest-section">
-                    <label for="person-phone">Телефон<span class="red">*</span></label>
-                    <input type="text" class="form-control" id="person-phone" name="person-phone" required>
-                </div>	  	  
-            </div>
-            <div id="agreement-wrap" class="form-check" style="display: none;">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="agree" checked disabled>
-                    <a href="privacy.php" target="_blank">Согласен на обработку персональных данных</a> 
-                </label>
-            </div>
-            <div class="row" style="display: none;">
                 <div class="col-lg-12">
-                    <button id="btn-add-cart-mosk" type="button" class="btn btn-outline-primary btn-add-cart"><i class="fa fa-shopping-cart"></i> В корзину</button>
-                    <button id="btn-submit" type="submit" class="btn btn-success">Оформить заказ</button>
-                </div>	  	  
+                    <button id="btn-submit" type="submit" class="btn btn-success">Перейти к оформлению заказа</button>
+                </div>        
             </div>
         </div>
         <input id="hidden-text" type="hidden" name="order">

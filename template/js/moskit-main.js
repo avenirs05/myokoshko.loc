@@ -34,12 +34,6 @@ jQuery(document).ready(function () {
 					return false;
 		}
 
-		// Появление полей имя, телефон и кнопки "Отправить"
-		$('#person-name-wrap').parent().show();
-		$('#person-phone-wrap').parent().show();
-		$('#btn-submit').parent().parent().show();
-		$('#agreement-wrap').show();
-
 		var calculatedRow = 			
 			'<tr class="item-net-row">' +
 				'<input type="hidden" value='+ random() + '>' +
@@ -57,7 +51,7 @@ jQuery(document).ready(function () {
 	      '<td class="quantity-goods">' + getQuantityCalc() + '</td>' +
 	      '<td class="price-one-goods">' + separateThousands( calcPriceOneMoskit() ) + '</td>' +
 	      '<td class="sum-goods">' + separateThousands( calcPriceQuantityMoskit() ) + '</td>' +
-	      '<td><img src="/template/imgs/close.png" width="10" alt=""></td>' +
+	      '<td><img src="http://copy2.mybudva.com/template/imgs/close.png" width="10" alt=""></td>' +
 	    '</tr>'; 
 
 	  var finalRow = 
@@ -70,6 +64,7 @@ jQuery(document).ready(function () {
 	  	'</tr>';
 
 		$('table').parent().parent().show();
+		$('#btn-submit').parent().parent().show();
 
 		// Итоговая таблица после нажатия "к рассчету"
 		if ( $('table tr').length == 1 ) {
@@ -84,9 +79,6 @@ jQuery(document).ready(function () {
 
 		// Подставляем в итоговый ряд итоговую сумму товаров
 		$('table .final-row .final-sum b').text( (separateThousands(calcFinalSum() ) ) + ' руб.' );
-
-		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
-		$('#hidden-text').val( $('table').parent().html() );
 
 		// Добавляет в корзину товар после калькуляции
 		addToCart();

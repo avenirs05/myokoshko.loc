@@ -5,7 +5,7 @@
 
 <div class="rest-content-wrap">
     <h1 class="text-center">Калькулятор расчета стоимости москитной сетки</h1>
-    <form id="net-calc" method="post" action="/thanks">		
+    <form id="net-calc" method="post" action="/cart">		
         <div class="container-fluid">
             <div class="row">
                 <div id="linen-wrap" class="col-lg form-group quest-section">
@@ -54,12 +54,12 @@
                     <label>Крепление</label>
                     <select name="fastening" class="form-control" id="fastening-content">
                         <option value="fastening-pvh-2-pairs">ПВХ (2 пары)</option>
-                        <option value="fastening-metal-2-pairs">Металл (2 пары)</option>						    
+                        <option value="fastening-metal-2-pairs">Металл (2 пары)</option>					    
                         <option value="fastening-plunger-4">Плунжер (4 шт)</option>		
                         <option value="fastening-baran-4">Барашек (4 шт)</option>
                         <option value="fastening-metal-inside">Металл (внутреннее)</option>		
                         <option value="fastening-vertex-9-mm">VERTEX (наплав 9 мм)</option>		
-                        <option value="fastening-vertex-13-mm">VERTEX (наплав 13 мм)</option>						    
+                        <option value="fastening-vertex-13-mm">VERTEX (наплав 13 мм)</option>			
                     </select>
                 </div>
                 <div id="screws-wrap" class="col-lg form-group quest-section">
@@ -118,31 +118,11 @@
                 </div>
             </div>
             <div class="row" style="display: none;">
-                <div id="person-name-wrap" class="col-lg-4 form-group quest-section">
-                    <label for="person-name">Имя<span class="red">*</span></label>
-                    <input type="text" class="form-control" id="person-name" name="person-name" required>
-                </div>	  	  
-            </div>
-            <div class="row" style="display: none;">
-                <div id="person-phone-wrap" class="col-lg-4 form-group quest-section">
-                    <label for="person-phone">Телефон<span class="red">*</span></label>
-                    <input type="text" class="form-control" id="person-phone" name="person-phone" required>
-                </div>	  	  
-            </div>
-            <div id="agreement-wrap" class="form-check" style="display: none;">
-                <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input" name="agree" checked disabled>
-                    <a href="privacy.php" target="_blank">Согласен на обработку персональных данных</a> 
-                </label>
-            </div>
-            <div class="row" style="display: none;">
                 <div class="col-lg-12">
-                    <button id="btn-add-cart-mosk" type="button" class="btn btn-outline-primary btn-add-cart"><i class="fa fa-shopping-cart"></i> В корзину</button>
-                    <button id="btn-submit" type="submit" class="btn btn-success">Оформить заказ</button>
+                    <button id="btn-submit" type="submit" class="btn btn-success">Перейти к оформлению заказа</button>
                 </div>	  	  
             </div>
-        </div>
-        <input id="hidden-text" type="hidden" name="order">
+        </div>        
     </form>
 </div>
 

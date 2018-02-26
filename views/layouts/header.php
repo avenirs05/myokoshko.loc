@@ -55,7 +55,7 @@
               </div>    
             </div>
 
-            <a class="icon-cart" href="/cart" target="_blank">
+            <a class="icon-cart" href="/cart">
               <span id="tovarov-v-korz">Товаров в корзине:</span><span id="quantity-goods">
                 <?php 
                   if (isset($_SESSION['cart']['quantity'])) {
@@ -177,7 +177,7 @@
         </button>
         <div class="col d-flex align-items-center justify-content-end">     
             <span class="phone-digits">+7 (495) 999-18-14</span>
-            <a class="icon-cart" href="#" target="_blank">
+            <a class="icon-cart" href="#">
               <span id="quantity-goods-mob">
                 <?php 
                   if (isset($_SESSION['cart']['quantity'])) {

@@ -26,8 +26,17 @@ class CartController
         if (isset($_SESSION['cart']['quantity'])) {
              $_SESSION['cart']['quantity'] = $_SESSION['cart']['quantity'] + $_POST['quantity'];
         } else $_SESSION['cart']['quantity'] = $_POST['quantity'];
-                
-        echo $_SESSION['cart']['quantity'];
+        
+        $product = [];
+        $product['id'] = $_POST['id'];
+        $product['name'] = $_POST['product'];
+        $product['quantity'] = $_POST['quantity'];
+        $product['price'] = $_POST['price'];
+        $product['sum'] = $_POST['sum'];
+        
+        $_SESSION['cart']['product'][] = $product;
+
+        echo json_encode($_SESSION['cart']);
 
         return true;        
     }

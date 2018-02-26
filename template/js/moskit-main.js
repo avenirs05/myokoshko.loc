@@ -88,6 +88,7 @@ jQuery(document).ready(function () {
 		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
 		$('#hidden-text').val( $('table').parent().html() );
 
+		// Добавление товара в корзину
 		var id = $('table .item-net-row input').val();
 		var cntLastRow = $('table .item-net-row').length - 1;
 		var quantity = $('#quantity').val();
@@ -104,9 +105,9 @@ jQuery(document).ready(function () {
 		  			'&sum=' + sum,
 		  type: 'post',
 		  success: function(data) {
-		  	$('#quantity-goods').text(data);
-		  	$('#quantity-goods-mob').text(data);
-		    //alert(typeof data);
+		  	var cart = JSON.parse(data);
+		  	$('#quantity-goods').text(cart.quantity);
+		  	$('#quantity-goods-mob').text(cart.quantity);
 		  }
 		});
 	

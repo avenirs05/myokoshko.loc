@@ -44,15 +44,15 @@ jQuery(document).ready(function () {
 			'<tr class="item-net-row">' +
 				'<input type="hidden" value='+ random() + '>' +
 	      '<td class="text-goods">Москитная сетка: ' + 
-	      	'вид: ' + getLinenText() + ', ' + 
-	        'профиль рамки: ' + getProfileText() + ', ' +
-	        'цвет рамки: ' + getColorText() + ', ' +
-	        'ручка: ' + getHandleText() + ', ' +
-	        'крепление: ' + getFasteningText() + ', ' +
-	        'фетр: ' + getFetrText() + ', ' +
-	        'саморезы: ' + getScrewsText() + ', ' +
-	        'ширина сетки: ' + getNetWidth() + ' мм, ' +
-	        'высота сетки: ' + getNetHeight() + ' мм' +
+	      	'<i>вид:</i> ' + getLinenText() + ', ' + 
+	        '<i>профиль рамки:</i> ' + getProfileText() + ', ' +
+	        '<i>цвет рамки:</i> ' + getColorText() + ', ' +
+	        '<i>ручка:</i> ' + getHandleText() + ', ' +
+	        '<i>крепление:</i> ' + getFasteningText() + ', ' +
+	        '<i>фетр:</i> ' + getFetrText() + ', ' +
+	        '<i>саморезы:</i> ' + getScrewsText() + ', ' +
+	        '<i>ширина сетки:</i> ' + getNetWidth() + ' мм, ' +
+	        '<i>высота сетки:</i> ' + getNetHeight() + ' мм' +
 	      '</td>' + 
 	      '<td class="quantity-goods">' + getQuantityCalc() + '</td>' +
 	      '<td class="price-one-goods">' + separateThousands( calcPriceOneMoskit() ) + '</td>' +

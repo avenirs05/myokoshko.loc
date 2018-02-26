@@ -102,7 +102,7 @@ function addToCart () {
   var cntLastRow = $('table .item-net-row').length - 1;
   var id = $('table .item-net-row input').eq(cntLastRow).val();   
   var quantity = $('#quantity').val();
-  var product = $('table .item-net-row .text-goods').eq(cntLastRow).text();
+  var product = $('table .item-net-row .text-goods').eq(cntLastRow).html();
   var price = $('table .item-net-row .price-one-goods').eq(cntLastRow).text();
   var sum = $('table .item-net-row .sum-goods').eq(cntLastRow).text();
   
@@ -115,7 +115,6 @@ function addToCart () {
           '&sum=' + sum,
     type: 'post',
     success: function(data) {
-      //console.log('Cart:' + data);
       var cart = JSON.parse(data);
       $('#quantity-goods').text(cart.quantity);
       $('#quantity-goods-mob').text(cart.quantity);

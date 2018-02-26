@@ -88,28 +88,8 @@ jQuery(document).ready(function () {
 		// Сформированный заказ вставляем в скрытое поле для отправки на сервер
 		$('#hidden-text').val( $('table').parent().html() );
 
-		// Добавление товара в корзину
-		var id = $('table .item-net-row input').val();
-		var cntLastRow = $('table .item-net-row').length - 1;
-		var quantity = $('#quantity').val();
-		var product = $('table .item-net-row .text-goods').eq(cntLastRow).text();
-		var price = $('table .item-net-row .price-one-goods').eq(cntLastRow).text();
-		var sum = $('table .item-net-row .sum-goods').eq(cntLastRow).text();
-		
-		$.ajax({
-		  url: '/cart/add',
-		  data: 'id=' + id + 
-		  			'&product=' + product + 
-		  			'&quantity=' + quantity + 
-		  			'&price=' + price + 
-		  			'&sum=' + sum,
-		  type: 'post',
-		  success: function(data) {
-		  	var cart = JSON.parse(data);
-		  	$('#quantity-goods').text(cart.quantity);
-		  	$('#quantity-goods-mob').text(cart.quantity);
-		  }
-		});
+		// Добавляет в корзину товар после калькуляции
+		addToCart();
 	
 	});
 
@@ -124,6 +104,21 @@ jQuery(document).ready(function () {
 
 			$('table .final-row .final-quantity-goods').text( calcFinalQuantity() );
 			$('table .final-row .final-sum b').text( (separateThousands(calcFinalSum() ) ) + ' руб.' );
+			
+			// Удаляет товар из корзины после калькуляции
+			var id = $(this).parent().parent().children('input').val();
+			var quantity = $(this).parent().parent().children('.quantity-goods').text();
+
+			$.ajax({
+			  url: '/cart/del',
+			  data: 'id=' + id + '&quantity=' + quantity,
+			  type: 'post',
+			  success: function(data) {
+			    var cart = JSON.parse(data);
+			    $('#quantity-goods').text(cart.quantity);
+			    $('#quantity-goods-mob').text(cart.quantity);
+			  }
+			});
 
 	});
 

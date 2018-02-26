@@ -95,3 +95,32 @@ function unSeparateThousandsAndToNum (str) {
     str = str.replace(/\s+/g,'');     
     return Number(str);
 }
+
+
+// Добавляет в корзину товар после калькуляции
+function addToCart () {
+  var cntLastRow = $('table .item-net-row').length - 1;
+  var id = $('table .item-net-row input').eq(cntLastRow).val();   
+  var quantity = $('#quantity').val();
+  var product = $('table .item-net-row .text-goods').eq(cntLastRow).text();
+  var price = $('table .item-net-row .price-one-goods').eq(cntLastRow).text();
+  var sum = $('table .item-net-row .sum-goods').eq(cntLastRow).text();
+  
+  $.ajax({
+    url: '/cart/add',
+    data: 'id=' + id + 
+          '&product=' + product + 
+          '&quantity=' + quantity + 
+          '&price=' + price + 
+          '&sum=' + sum,
+    type: 'post',
+    success: function(data) {
+      //console.log('Cart:' + data);
+      var cart = JSON.parse(data);
+      $('#quantity-goods').text(cart.quantity);
+      $('#quantity-goods-mob').text(cart.quantity);
+    }
+  });
+}
+
+

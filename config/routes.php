@@ -27,6 +27,7 @@ return array(
     // 'cart/add/([0-9]+)' => 'cart/add/$1', // actionAdd в CartController    
     // 'cart/addAjax/([0-9]+)' => 'cart/addAjax/$1', // actionAddAjax в CartController
     'cart/add' => 'cart/add',
+    'cart/del' => 'cart/del',
     'cart' => 'cart/index', 
 
     //Страница "спасибо за заявку"

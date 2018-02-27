@@ -22,14 +22,10 @@ class CabinetController
         // Получаем информацию о пользователе из БД
         $user = User::getUserById($userId);
         
-        //print_r($user);
-        // Передаем сумму совершенных ранее покупок
-        //$res = Order::getTotalSumTrans($user['id']);
-        //d($res);
+        // Сумма покупок
+        $totalSumTrans = Order::getTotalSumTrans($user['id']);
 
-        // Подключаем вид
-        
-
+        // Подключаем вид     
         require_once(ROOT . '/views/cabinet/index.php');
         return true;       
     }

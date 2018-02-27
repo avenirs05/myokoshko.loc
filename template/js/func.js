@@ -122,4 +122,14 @@ function addToCart () {
   });
 }
 
+// Рассчитывает скидку
+function calcDiscount () {
+  if ( $('.total-sum-trans').text() < 500 ) {   
+        return 0;
+  }
+  if ( $('.total-sum-trans').text() >= 500 ) {
+        return 10;
+  }
+}
+
 

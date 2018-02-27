@@ -209,7 +209,7 @@
 <div class="container-fluid d-lg-none text-center connect-us-mob">
 	<h2 class="text-center">Связаться с нами</h2>
 	<div class="connects-icon-wrap">
-		<a class="icon-link" href="#" target="_blank">
+<!-- 		<a class="icon-link" href="#" target="_blank">
 			<img class="img-fluid vk-icon" src="/template/imgs/connect/vk.svg" width="25" height="25" alt="">
 		</a>
 		<a class="icon-link" href="#" target="_blank">
@@ -220,7 +220,7 @@
 		</a>  
 		<a class="icon-link" href="#" target="_blank">
 			<img src="/template/imgs/connect/odnokl.svg" width="25" height="25" alt=""> 
-		</a>  
+		</a>   -->
 		<img class="whatsapp-icon" src="/template/imgs/connect/whatsapp.svg" width="27" height="27" alt="">
 		<img class="viber-icon" src="/template/imgs/connect/viber.png" width="25" height="25" alt="">
 		<img class="telegram-icon" src="/template/imgs/connect/telegram.png" width="25" height="25" alt="">

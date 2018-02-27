@@ -1,38 +1,21 @@
-    <div class="page-buffer"></div>
-</div>
-
-<footer id="footer" class="page-footer"><!--Footer-->
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <p class="pull-left">Copyright © 2015</p>
-                <p class="pull-right">Курс PHP Start</p>
-            </div>
-        </div>
-    </div>
-</footer><!--/Footer-->
-
-
-
-<script src="/template/js/jquery.js"></script>
-<script src="/template/js/jquery.cycle2.min.js"></script>
-<script src="/template/js/jquery.cycle2.carousel.min.js"></script>
+<script src="/template/js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="/template/js/bootstrap.min.js"></script>
-<script src="/template/js/jquery.scrollUp.min.js"></script>
-<script src="/template/js/price-range.js"></script>
-<script src="/template/js/jquery.prettyPhoto.js"></script>
+
+<!-- Tiles -->
+<script src="/template/js/tiles.js"></script>
+
+<!-- Menu mobile -->
+<script src="/template/js/menu-mobile.js"></script>
+
+<!-- My Own Js-scripts -->
+<script src="/template/js/moskit-data.js"></script>
+<script src="/template/js/func.js"></script>
+<script src="/template/js/moskit-func.js"></script>       
+<script src="/template/js/moskit-main.js"></script>
 <script src="/template/js/main.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".add-to-cart").click(function () {
-            var id = $(this).attr("data-id");
-            $.post("/cart/addAjax/"+id, {}, function (data) {
-                $("#cart-count").html(data);
-            });
-            return false;
-        });
-    });
-</script>
+<script src="/template/js/cart.js"></script>
+<script src="/template/js/jquery.maskedinput.js" type="text/javascript"></script>
 
 </body>
 </html>

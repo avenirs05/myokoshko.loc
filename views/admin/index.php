@@ -1,28 +1,22 @@
 <?php include ROOT . '/views/layouts/header_admin.php'; ?>
 
-<section>
-    <div class="container">
-        <div class="row">
-            
-            <br/>
-            
-            <h4>Добрый день, администратор!</h4>
-            
-            <br/>
-            
-            <p>Вам доступны такие возможности:</p>
-            
-            <br/>
-            
-            <ul>
-                <li><a href="/admin/product">Управление товарами</a></li>
-                <li><a href="/admin/category">Управление категориями</a></li>
-                <li><a href="/admin/order">Управление заказами</a></li>
-            </ul>
-            
-        </div>
+<div class="container" style="padding-top: 40px;">
+  <div class="row" style="margin-bottom: 30px;">
+    <div class="col">
+      <a href="#">Установить скидку</a>
     </div>
-</section>
+  </div>
+  <div class="row" style="margin-bottom: 30px;">
+    <div class="col">
+      <a href="#">Отметить покупку</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <a href="#">Все транзакции</a>
+    </div>
+  </div>
+</div>
 
 <?php include ROOT . '/views/layouts/footer_admin.php'; ?>
 

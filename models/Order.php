@@ -8,6 +8,51 @@ class Order
 
     /**
      * Сохранение заказа 
+     * @param string $userId <p>id юзера</p>
+     * @param string $userPhone <p>Телефон</p>
+     * @param string $userComment <p>Комментарий</p>
+     * @param integer $userId <p>id пользователя</p>
+     * @param array $products <p>Массив с товарами</p>
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    public static function getTotalSumTrans($userId)
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        //d($userId);
+
+        // Получение и возврат результатов
+        $sql = $db->query('SELECT * FROM orders WHERE user_id = :id');   
+
+        $result = $db->prepare($sql);
+
+        $result->bindParam(':id', $userId, PDO::PARAM_INT);
+
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+
+        $result->execute();
+
+        return $result->fetch();
+        //$result->execute();
+
+        //d($result->fetch());
+        //d($result);
+        // $ordersList = array();
+        // $i = 0;
+        // while ($row = $result->fetch()) {
+        //     $ordersList[$i]['id'] = $row['id'];
+        //     $ordersList[$i]['user_name'] = $row['user_name'];
+        //     $ordersList[$i]['user_phone'] = $row['user_phone'];
+        //     $ordersList[$i]['date'] = $row['date'];
+        //     $ordersList[$i]['status'] = $row['status'];
+        //     $i++;
+        // }
+        //return $ordersList;
+    }
+
+
+    /**
+     * Сохранение заказа 
      * @param string $userName <p>Имя</p>
      * @param string $userPhone <p>Телефон</p>
      * @param string $userComment <p>Комментарий</p>

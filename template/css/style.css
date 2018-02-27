@@ -421,9 +421,6 @@ a {
 	.rest-content-wrap h2 {
 			font-size: 24px;
 	}
-	.rest-content-wrap #btn-to-estim {
-		margin-bottom: 20px;
-	}
 }
 
 @media screen and (min-device-width: 320px)

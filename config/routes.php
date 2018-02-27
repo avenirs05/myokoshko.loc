@@ -32,6 +32,8 @@ return array(
 
     //Страница "спасибо за заявку"
     'thanks' => 'thanks/index',
+
+    'privacy' => 'privacy/index',
     
     // По умолчанию
     '([\w]+)' => 'menu/home', 

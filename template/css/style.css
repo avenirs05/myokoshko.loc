@@ -269,6 +269,10 @@ a {
 	padding-top: 8px;
 }
 
+#menu-wrap #menu-content .dropdown-menu .dropdown-item:active {
+	color: #FFFFFF;
+}
+
 #menu-wrap #menu-content .dropdown-divider {
 	margin: 0;
 }

@@ -1,11 +1,13 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
+<?php //d($_SESSION['cart']); ?>
+
 <div class="rest-content-wrap for-landscape cart-wrap">
   <div class="container-fluid">
     <h1 class="text-center">Корзина</h1>  
     <form method="post" action="/thanks">
 	    <table class="table table-bordered">
-	        <thead style="display: none;">
+	        <thead>
 	            <tr>
 	                <th scope="col">Товар</th>
 	                <th scope="col">Количество</th>
@@ -20,7 +22,8 @@
 								<?php if ($_SESSION['cart']['products'][$i]['id'] == 'deleted'): ?>
 									<?php continue; ?>
 								<?php endif; ?>	 
-										<tr class="item-net-row">											
+										<tr class="item-net-row">	
+											<input type="hidden" value="<?php echo $_SESSION['cart']['products'][$i]['id']; ?>">			
 								      <td class="text-goods">
 								      	<?php echo $_SESSION['cart']['products'][$i]['name']; ?>
 								      </td>
@@ -37,7 +40,7 @@
 								      	<img src="/template/imgs/close.png" width="10" alt="">
 								      </td>
 								    </tr>
-								    <input type="hidden" value="<?php echo $_SESSION['cart']['products'][$i]['id']; ?>">
+								    
 							<?php endfor; ?>
 	    	    <?php endif; ?>	 
 		       	<tr class="final-row">
@@ -64,7 +67,7 @@
 	    <div id="agreement-wrap" class="form-check" style="display: none;">
 	        <label class="form-check-label">
 	            <input type="checkbox" class="form-check-input" name="agree" checked disabled>
-	            <a href="privacy.php" target="_blank">Согласен на обработку персональных данных</a> 
+	            <a href="/privacy" target="_blank">Согласен на обработку персональных данных</a> 
 	        </label>
 	    </div>
 	    <div class="row" style="margin-top:20px; margin-bottom: 60px; display: none;">

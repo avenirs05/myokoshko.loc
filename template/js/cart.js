@@ -23,8 +23,8 @@ jQuery(document).ready(function () {
 	$('.cart-wrap #btn-submit').click(function() {
 			$('table td img').parent().remove();
 			$('table th.remove').remove();
+			$('table tr input').remove();
 			$('#hidden-text').val( $('table').html() );
-
 	});
 
 });

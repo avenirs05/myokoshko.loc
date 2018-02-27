@@ -101,6 +101,7 @@
                     <div id="wrong-width-height" style="display: none;" class="red">Введите правильное значение ширины (высоты) сетки (от 200 до 2500 мм).</div>
                 </div>
             </div>
+            <div style="background-color: #f5f5f5;">.</div>
             <div class="row" style="display: none; margin-bottom: 15px;">
                 <div class="col-lg">
                     <table class="table table-bordered">

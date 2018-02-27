@@ -177,7 +177,7 @@
         </button>
         <div class="col d-flex align-items-center justify-content-end">     
             <span class="phone-digits">+7 (495) 999-18-14</span>
-            <a class="icon-cart" href="#">
+            <a class="icon-cart" href="/cart">
               <span id="quantity-goods-mob">
                 <?php 
                   if (isset($_SESSION['cart']['quantity'])) {
@@ -188,7 +188,6 @@
               <img class="img-fluid" src="/template/imgs/connect/cart-white.svg" width="30" height="30" alt=""> 
             </a>
         </div>       
-      </nav>  
-
+      </nav>
     </div>
 

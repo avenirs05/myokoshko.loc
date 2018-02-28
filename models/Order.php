@@ -9,10 +9,6 @@ class Order
     /**
      * Сохранение заказа 
      * @param string $userId <p>id юзера</p>
-     * @param string $userPhone <p>Телефон</p>
-     * @param string $userComment <p>Комментарий</p>
-     * @param integer $userId <p>id пользователя</p>
-     * @param array $products <p>Массив с товарами</p>
      * @return boolean <p>Результат выполнения метода</p>
      */
     public static function getTotalSumTrans($userId)
@@ -23,6 +19,25 @@ class Order
         $result = $db->query('SELECT SUM(sum) FROM orders WHERE user_id=' . $userId);
         
         return $result->fetch()[0];
+    }
+
+
+    /**
+     * Сохранение заказа 
+     * @param string $userId <p>id юзера</p>
+     * @return int <p>Скидка в процентах</p>
+     */
+    public static function getValueOfDiscount()
+    {
+        if ( !isset($_SESSION['totalSumTrans']) ) {
+                return 0;
+        }
+        if ($_SESSION['totalSumTrans'] < 500) {
+             return 0;
+        }
+        if ($_SESSION['totalSumTrans'] >= 500) {
+             return 10;
+        }
     }
 
 

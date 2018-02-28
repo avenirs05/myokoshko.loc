@@ -23,7 +23,7 @@ class CabinetController
         $user = User::getUserById($userId);
         
         // Сумма покупок
-        $totalSumTrans = Order::getTotalSumTrans($user['id']);
+        $_SESSION['totalSumTrans'] = Order::getTotalSumTrans($user['id']);
 
         // Подключаем вид     
         require_once(ROOT . '/views/cabinet/index.php');
@@ -42,6 +42,9 @@ class CabinetController
 
         // Получаем информацию о пользователе из БД
         $user = User::getUserSocById($userSocId);
+
+        // Сумма покупок
+        $_SESSION['totalSumTrans'] = Order::getTotalSumTrans($user['id']);
 
         // Подключаем вид
         require_once(ROOT . '/views/cabinet/index.php');

@@ -50,6 +50,22 @@
 		           <td class="final-sum nowrap"><b>0 руб.</b></td>
 		           <td></td>    
 		       	</tr>  
+	       		<tr class="tr-discount">
+	       	    <td class="text-right"><b>Скидка</b></td>
+	       	    <td class="nowrap" style="border-right: 1px solid #f5f5f5"></td>
+	       	    <td style="border-right: 1px solid #f5f5f5"></td>
+	       	    <td class="nowrap">
+	       	    	<b><?php echo Order::getValueOfDiscount(); ?>%</b>
+	       	    </td>
+	       	    <td></td>    
+	       		</tr>
+       			<tr class="final-sum-to-pay">
+       		    <td class="text-right"><b>К оплате</b></td>
+       		    <td class="nowrap" style="border-right: 1px solid #f5f5f5"></td>
+       		    <td style="border-right: 1px solid #f5f5f5"></td>
+       		    <td class="nowrap"><b>500 р.</b></td>
+       		    <td></td>    
+       			</tr>
 	      	</tbody>
 	    </table>
 	    <div class="row" style="display: none;">

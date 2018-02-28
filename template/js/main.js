@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 	}
 
 	// Рассчет скидки для клиента
-	$('.discount').text( calcDiscount() ) ;
+	// $('.discount').text( calcDiscount() ) ;
 	
 
 });

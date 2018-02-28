@@ -5,14 +5,16 @@
 		<h4>Здравствуйте, <?php echo $user['first_name'];?>!</h4> 
 		<p>Совершено покупок на сумму: 
 			<span class="total-sum-trans">
-				<?php if ($totalSumTrans === NULL): ?>
+				<?php if ($_SESSION['totalSumTrans'] === NULL): ?>
 					<?php echo '0'; ?>
 				<?php else: ?>
-					<?php echo $totalSumTrans; ?>
+					<?php echo $_SESSION['totalSumTrans']; ?>
 				<?php endif; ?>
 			</span> руб.</p>
 		<p>Текущая скидка: 
-			<span class="discount"></span>%
+			<span class="discount">
+				<?php echo Order::getValueOfDiscount(); ?>
+			</span>%
 		</p>
 		 <!-- <a href="/cabinet/edit">Редактировать данные</a>   -->
 	</div>

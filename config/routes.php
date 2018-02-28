@@ -30,7 +30,8 @@ return array(
     'admin/order/add/order' => 'adminOrder/addOrder',
     'admin/order/add' => 'adminOrder/addIndex',
     'admin/order' => 'adminOrder/index',    
-    'admin/user' => 'adminUser/index',
+    'admin/user/buyers' => 'adminUser/buyers',
+    'admin/user/all' => 'adminUser/all',
     'admin' => 'admin/index',
 
     //Страница "спасибо за заявку"

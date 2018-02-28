@@ -97,6 +97,14 @@ function unSeparateThousandsAndToNum (str) {
 }
 
 
+// Удаляет " руб.", затем удаляет пробелы и к числу
+function delRubTextAndToNum (str) {
+    str = str.replace(' руб.','');     
+    str = unSeparateThousandsAndToNum(str)
+    return Number(str);
+}
+
+
 // Добавляет в корзину товар после калькуляции
 function addToCart () {
   var cntLastRow = $('table .item-net-row').length - 1;
@@ -120,6 +128,18 @@ function addToCart () {
       $('#quantity-goods-mob').text(cart.quantity);
     }
   });
+}
+
+
+// Подсчет итога в корзине, если есть скидка
+function calcFinalSumInCartIfDiscount () {
+  var finalSumWithoutDisc = delRubTextAndToNum( $('.final-sum b').text() );
+  var amountOfDisc = $('.discount-text').text().replace('%','');   
+  var finalSumWithDisc = finalSumWithoutDisc - (finalSumWithoutDisc * amountOfDisc / 100);
+  finalSumWithDisc = Math.round(finalSumWithDisc);
+  finalSumWithDisc = separateThousands(finalSumWithDisc);
+  finalSumWithDisc = finalSumWithDisc + ' руб.';
+  $('.final-sum-if-discount b').text(finalSumWithDisc);
 }
 
 // Рассчитывает скидку

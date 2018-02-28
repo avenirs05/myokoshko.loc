@@ -101,6 +101,9 @@ jQuery(document).ready(function () {
 			var id = $(this).parent().parent().children('input').val();
 			var quantity = $(this).parent().parent().children('.quantity-goods').text();
 
+			// Подсчет итога в корзине, если есть скидка
+			calcFinalSumInCartIfDiscount()
+
 			$.ajax({
 			  url: '/cart/del',
 			  data: 'id=' + id + '&quantity=' + quantity,

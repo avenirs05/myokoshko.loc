@@ -18,14 +18,24 @@ jQuery(document).ready(function () {
 
 		// Подставляем в итоговый ряд итоговую сумму товаров
 		$('table .final-row .final-sum b').text( (separateThousands(calcFinalSum() ) ) + ' руб.' );
+
+		// Подсчет итога в корзине, если есть скидка
+		calcFinalSumInCartIfDiscount();
 	}
 
+	// Отправка формы на сервер
 	$('.cart-wrap #btn-submit').click(function() {
 			$('table td img').parent().remove();
 			$('table th.remove').remove();
 			$('table tr input').remove();
 			$('#hidden-text').val( $('table').html() );
 	});
+
+
+
+
+
+
 
 });
 

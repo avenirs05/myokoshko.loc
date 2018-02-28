@@ -51,19 +51,19 @@
 		           <td></td>    
 		       	</tr>  
 	       		<tr class="tr-discount">
-	       	    <td class="text-right"><b>Скидка</b></td>
+	       	    <td class="text-right red"><b>Скидка</b></td>
 	       	    <td class="nowrap" style="border-right: 1px solid #f5f5f5"></td>
 	       	    <td style="border-right: 1px solid #f5f5f5"></td>
 	       	    <td class="nowrap">
-	       	    	<b class="discount-text"><?php echo Order::getValueOfDiscount(); ?>%</b>
+	       	    	<b class="discount-text red">-<?php echo Order::getValueOfDiscount(); ?>%</b>
 	       	    </td>
 	       	    <td></td>    
 	       		</tr>
        			<tr class="final-sum-to-pay-wrap">
-       		    <td class="text-right"><b>К оплате</b></td>
+       		    <td class="text-right"><b style="color: green;">К оплате</b></td>
        		    <td class="nowrap" style="border-right: 1px solid #f5f5f5"></td>
        		    <td style="border-right: 1px solid #f5f5f5"></td>
-       		    <td class="nowrap final-sum-if-discount"><b></b></td>
+       		    <td class="nowrap final-sum-if-discount"><b style="color: green;"></b></td>
        		    <td></td>    
        			</tr>
 	      	</tbody>

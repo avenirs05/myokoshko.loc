@@ -2,19 +2,20 @@
 
 <div class="rest-content-wrap for-landscape cabinet-wrap">
 	<div class="container-fluid"><h1 class="text-center">Личный кабинет</h1>  
-		<h4>Здравствуйте, <?php echo $user['first_name'];?>!</h4> 
+		<h5>Здравствуйте, <?php echo $user['first_name'];?>!</h5> 
 		<p>Совершено покупок на сумму: 
 			<span class="total-sum-trans">
+				<b>
 				<?php if ($_SESSION['totalSumTrans'] === NULL): ?>
 					<?php echo '0'; ?>
 				<?php else: ?>
 					<?php echo $_SESSION['totalSumTrans']; ?>
 				<?php endif; ?>
-			</span> руб.</p>
+			</span> руб.</b></p>
 		<p>Текущая скидка: 
-			<span class="discount">
-				<?php echo Order::getValueOfDiscount(); ?>
-			</span>%
+			<span class="discount red">
+				<?php echo Order::getValueOfDiscount(); ?>%
+			</span>
 		</p>
 		 <!-- <a href="/cabinet/edit">Редактировать данные</a>   -->
 	</div>

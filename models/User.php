@@ -362,4 +362,33 @@ class User
         return $result->fetch();
     }
 
+    /**
+     * Возвращает список юзеров
+     * @return array <p>Список юзеров</p>
+     */
+    public static function getUsersList()
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        // Получение и возврат результатов
+        $result = $db->query('SELECT o.user_id, SUM(o.sum) as sum, u.id, u.first_name, u.last_name, u.identity, u.email FROM orders o INNER JOIN user u ON o.user_id=u.id GROUP BY o.user_id');
+        
+
+        $usersList = array();
+
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $usersList[$i]['id'] = $row['id'];
+            $usersList[$i]['first_name'] = $row['first_name'];
+            $usersList[$i]['last_name'] = $row['last_name'];
+            $usersList[$i]['email'] = $row['email'];
+            $usersList[$i]['identity'] = $row['identity'];
+            $usersList[$i]['sum'] = $row['sum'];
+            $i++;
+        }
+
+        return $usersList;
+    }
+
 }

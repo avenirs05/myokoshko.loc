@@ -27,12 +27,21 @@ return array(
     'cart' => 'cart/index', 
 
     // Админпанель:
+    'admin/order' => 'adminOrder/index',
+    'admin/user' => 'adminUser/index',
     'admin' => 'admin/index',
 
     //Страница "спасибо за заявку"
     'thanks' => 'thanks/index',
 
+    // Страница "Privacy"
     'privacy' => 'privacy/index',
+
+    // Управление заказами:    
+    // 'admin/order/update/([0-9]+)' => 'adminOrder/update/$1',
+    // 'admin/order/delete/([0-9]+)' => 'adminOrder/delete/$1',
+    // 'admin/order/view/([0-9]+)' => 'adminOrder/view/$1',
+    
     
     // По умолчанию
     '([\w]+)' => 'menu/home', 

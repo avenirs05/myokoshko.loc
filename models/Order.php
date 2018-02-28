@@ -81,15 +81,18 @@ class Order
         $db = Db::getConnection();
 
         // Получение и возврат результатов
-        $result = $db->query('SELECT id, user_name, user_phone, date, status FROM product_order ORDER BY id DESC');
+        $result = $db->query('SELECT o.id, o.sum, o.date, u.identity, u.email, u.first_name, u.last_name from orders o, user u where o.user_id=u.id');
         $ordersList = array();
         $i = 0;
         while ($row = $result->fetch()) {
             $ordersList[$i]['id'] = $row['id'];
-            $ordersList[$i]['user_name'] = $row['user_name'];
-            $ordersList[$i]['user_phone'] = $row['user_phone'];
+            $ordersList[$i]['first_name'] = $row['first_name'];
+            $ordersList[$i]['last_name'] = $row['last_name'];
+            $ordersList[$i]['email'] = $row['email'];
+            $ordersList[$i]['identity'] = $row['identity'];
+            $ordersList[$i]['sum'] = $row['sum'];
             $ordersList[$i]['date'] = $row['date'];
-            $ordersList[$i]['status'] = $row['status'];
+
             $i++;
         }
         return $ordersList;

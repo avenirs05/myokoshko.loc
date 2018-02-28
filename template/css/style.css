@@ -385,11 +385,11 @@ a {
 	padding-left: 0;
 	padding-right: 0;
 }
-/*.reg-wrap .container-fluid .row {
-	margin-left: 0;
-	margin-right: 0;
+
+.cabinet-wrap h5 {
+	margin-bottom: 20px;
 }
-*/
+
 @media screen and (max-device-width: 991px) {
 	.tile-holder {
 		margin-top: 10px;

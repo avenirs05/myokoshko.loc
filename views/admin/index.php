@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col">
       <h5>        
-        <button class="btn btn-primary" style="padding: 0;"><a href="/admin/order" style="text-decoration: none; color: #fff; padding: 10px;">Транзакции</a></button>
+        <button class="btn btn-primary" style="padding: 0;"><a href="/admin/order" style="text-decoration: none; color: #fff; padding: 10px;">Оплаченные заказы</a></button>
       </h5>
     </div>
   </div>

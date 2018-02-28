@@ -22,5 +22,4 @@ class AdminUserController extends AdminBase
         require_once(ROOT . '/views/admin_user/index.php');
         return true;
     }
-
 }

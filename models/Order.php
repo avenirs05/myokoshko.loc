@@ -7,6 +7,29 @@ class Order
 {
 
     /**
+     * Добавление оплаченного заказа 
+     * @return boolean <p>Результат выполнения метода</p>
+     */
+    public static function add()
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+
+        $user_id = $_POST['user_id'];
+        $sum = $_POST['sum'];
+        
+        // Текст запроса к БД
+        $sql = 'INSERT INTO orders (user_id, sum) '
+                . 'VALUES (:user_id, :sum)';
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':user_id', $user_id, PDO::PARAM_STR);
+        $result->bindParam(':sum', $sum, PDO::PARAM_STR);
+
+        return $result->execute();
+    }
+
+    /**
      * Сохранение заказа 
      * @param string $userId <p>id юзера</p>
      * @return boolean <p>Результат выполнения метода</p>

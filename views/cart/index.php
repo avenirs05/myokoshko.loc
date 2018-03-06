@@ -39,8 +39,7 @@
 								      <td>
 								      	<img src="/template/imgs/close.png" width="10" alt="">
 								      </td>
-								    </tr>
-								    
+								    </tr>								    
 							<?php endfor; ?>
 	    	    <?php endif; ?>	 
 		       	<tr class="final-row">
@@ -55,7 +54,8 @@
 	       	    <td class="nowrap" style="border-right: 1px solid #f5f5f5"></td>
 	       	    <td style="border-right: 1px solid #f5f5f5"></td>
 	       	    <td class="nowrap">
-	       	    	<b class="discount-text red">-<?php echo Order::getValueOfDiscount(); ?>%</b>
+	       	    	<b class="red">-</b>
+	       	    	<b class="discount-text red"><?php echo Order::getValueOfDiscount(); ?>%</b>
 	       	    </td>
 	       	    <td></td>    
 	       		</tr>

@@ -9,8 +9,8 @@ return array(
 );
 
 // return array(
-//     'host' => 'u475861.mysql.masterhost.ru',
-//     'dbname' => 'u475861_okoshko',
-//     'user' => 'u475861_2',
-//     'password' => 'i_G4o_6NGs',
+//     'host' => 'myokoshkor.mysql',
+//     'dbname' => 'myokoshkor_1',
+//     'user' => 'myokoshkor_1',
+//     'password' => 'b/NcWUH5',
 // );

@@ -185,9 +185,8 @@ class User
         if (isset($_SESSION['user'])) {
             return $_SESSION['user'];
         }
-
-        //header("Location: /user/login");
     }
+
 
     /**
      * Возвращает идентификатор пользователя, если он авторизирован.<br/>

@@ -41,9 +41,9 @@
               <a class="icon-link" href="#" target="_blank">
                 <img src="/template/imgs/connect/odnokl.svg" width="25" height="25" alt=""> 
               </a>  --> 
-              <img class="whatsapp-icon" src="/template/imgs/connect/whatsapp.svg" width="27" height="27" alt="">
+ <!--              <img class="whatsapp-icon" src="/template/imgs/connect/whatsapp.svg" width="27" height="27" alt="">
               <img class="viber-icon" src="/template/imgs/connect/viber.png" width="25" height="25" alt="">
-              <img class="telegram-icon" src="/template/imgs/connect/telegram.png" width="25" height="25" alt="">    
+              <img class="telegram-icon" src="/template/imgs/connect/telegram.png" width="25" height="25" alt="">  -->   
             </div>
             <div class="registr-wrap">
               <div class="registr-content">                
@@ -66,7 +66,10 @@
               </span>
               <img class="img-fluid" src="/template/imgs/connect/cart.svg" width="25" height="25" alt=""> 
             </a> 
-            <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">          
+            <div class="col-auto d-flex align-items-center justify-content-end contacts-mob-phone ml-auto">  
+              <img class="whatsapp-icon" src="/template/imgs/connect/whatsapp.svg" width="27" height="27" alt="">&nbsp;
+              <img class="viber-icon" src="/template/imgs/connect/viber.png" width="25" height="25" alt="">&nbsp;
+              <img class="telegram-icon" src="/template/imgs/connect/telegram.png" width="25" height="25" alt=""> &nbsp;
               <img class="phone-icon" src="/template/imgs/connect/phone.svg" width="17" height="17" alt="">
               <div class="phone-digits">+7 (495) 999-18-14</div>        
             </div>

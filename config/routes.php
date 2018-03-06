@@ -38,13 +38,7 @@ return array(
     'thanks' => 'thanks/index',
 
     // Страница "Privacy"
-    'privacy' => 'privacy/index',
-
-    // Управление заказами:    
-    // 'admin/order/update/([0-9]+)' => 'adminOrder/update/$1',
-    // 'admin/order/delete/([0-9]+)' => 'adminOrder/delete/$1',
-    // 'admin/order/view/([0-9]+)' => 'adminOrder/view/$1',
-    
+    'privacy' => 'privacy/index',  
     
     // По умолчанию
     '([\w]+)' => 'menu/home', 

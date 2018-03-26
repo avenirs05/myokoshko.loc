@@ -106,16 +106,10 @@
   </a>		  
 </div>
 
-
 <div class="rest-content-wrap about-company">
 	<h2 class="text-center">О компании</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda?</p>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda?</p>
-
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus repellat enim aspernatur vitae debitis harum quia, eius velit deleniti quas illum numquam atque, perspiciatis maxime dolores laborum distinctio earum assumenda?</p>
+	<p>Компания "Моё окошко" является официальным дилером ведущих производителей окон из ПВХ, дерева и алюминия. Мы производим москитные сетки, гнём отливы по вашей схеме. Режем откосы под нужный вам размер. Комплектующие для окон.</p>
 	<hr>
-
 
 <!-- Advantages desktop -->
 	<div class="container-fluid d-none d-lg-block advantages">
